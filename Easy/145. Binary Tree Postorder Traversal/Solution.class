@@ -1,4 +1,5 @@
 class Solution {
+    List<Integer> order = new ArrayList<Integer>();
     public List<Integer> postorderTraversal(TreeNode root) {
         
     }
