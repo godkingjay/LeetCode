@@ -4,4 +4,8 @@ class Solution {
         traverse(root);
         return order;
     }
+    
+    public void traverse(TreeNode root){
+        
+    }
 }
