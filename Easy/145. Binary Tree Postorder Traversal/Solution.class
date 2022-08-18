@@ -6,5 +6,9 @@ class Solution {
     }
     
     public void traverse(TreeNode root){
+        if(root == null) return;
+        traverse(root.left);
+        traverse(root.right);
+        order.add(root.val);
     }
 }
