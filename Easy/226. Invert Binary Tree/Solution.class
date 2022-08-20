@@ -4,4 +4,7 @@ class Solution {
         invert(root);
         return root;
     }
+    
+    public void invert(TreeNode root){
+    }
 }
