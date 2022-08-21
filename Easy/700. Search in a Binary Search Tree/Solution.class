@@ -4,4 +4,6 @@ class Solution {
         traverse(root, val);
         return node;
     }
+    
+    public void traverse(TreeNode root, int val
 }
