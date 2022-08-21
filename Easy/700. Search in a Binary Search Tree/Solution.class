@@ -7,5 +7,6 @@ class Solution {
     
     public void traverse(TreeNode root, int val){
         if(root == null) return;
+        if(root.val == val) node = root;
     }
 }
