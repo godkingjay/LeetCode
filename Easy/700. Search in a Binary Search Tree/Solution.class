@@ -9,5 +9,6 @@ class Solution {
         if(root == null) return;
         if(root.val == val) node = root;
         traverse(root.left, val);
+        traverse(root.right, val);
     }
 }
