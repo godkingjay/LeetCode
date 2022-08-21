@@ -2,5 +2,6 @@ class Solution {
     TreeNode node = null;
     public TreeNode searchBST(TreeNode root, int val) {
         traverse(root, val);
+        return node;
     }
 }
