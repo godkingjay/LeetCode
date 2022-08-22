@@ -7,6 +7,6 @@ class Solution {
     }
     
     public void search(TreeNode root, int k){
-        
+        if(root == null || exists) return;
     }
 }
