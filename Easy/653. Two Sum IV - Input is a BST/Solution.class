@@ -12,5 +12,8 @@ class Solution {
             exists = true;
             return;
         }
+        set.add(root.val);
+        search(root.left, k);
+        search(root.right, k);
     }
 }
