@@ -5,4 +5,8 @@ class Solution {
         search(root, k);
         return exists;
     }
+    
+    public void search(TreeNode root, int k){
+        
+    }
 }
