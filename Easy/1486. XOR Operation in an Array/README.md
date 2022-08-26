@@ -1,4 +1,4 @@
-# PROBLEM #1486([XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | Math, Bit Manipulation)
+# PROBLEM #1486 ([XOR Operation in an Array](https://leetcode.com/problems/xor-operation-in-an-array/) | Math, Bit Manipulation)
 
 You are given an integer n and an integer start.
 
