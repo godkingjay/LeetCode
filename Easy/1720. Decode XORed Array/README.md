@@ -8,20 +8,20 @@ You are given the encoded array. You are also given an integer first, that is th
 
 Return the original array arr. It can be proved that the answer exists and is unique.
 
-<hr>
+***
 
 ### Example 1
 **Input:** encoded = [1,2,3], first = 1 <br />
 **Output:** [1,0,2,1] <br />
 **Explanation:** If arr = [1,0,2,1], then first = 1 and encoded = [1 XOR 0, 0 XOR 2, 2 XOR 1] = [1,2,3]
 
-<hr>
+***
 
 ### Example 2
 **Input:** encoded = [6,2,7,3], first = 4 <br />
 **Output:** [4,2,0,7,4]
 
-<hr>
+***
 
 ## SOLUTIONS
 
