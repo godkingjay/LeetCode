@@ -22,5 +22,13 @@ You can return the answer in any order.
 ***
 
 ### **Example 3**
-**Input:** `nums = [3,3]`, `target = 6`
+**Input:** `nums = [3,3]`, `target = 6` <br/>
 **Output:** `[0,1]`
+
+***
+
+## SOLUTIONS
+
+- **HashMap**
+
+We create a HashMap that contains <Integer, Integer>, the key is the element from the array and value is its index,
