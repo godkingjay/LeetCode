@@ -60,8 +60,9 @@ class Solution {
     }
 }
 ```
+<br/>
 
-- C++
+- **C**++
 ```cpp
 class Solution {
 public:
