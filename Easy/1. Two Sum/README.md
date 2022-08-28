@@ -45,7 +45,7 @@ We create a for loop to iterate through each element of the array. Each element 
 
 An operation is perforned `target - element` that is stored to variable `pair`, which represents the number needed to be added to the `current element` to get the `target`. The HashMap is checked if it already contains the number `pair`. If it is, then return the `index of the current element` and the `index of pair`.
 
-- JAVA
+- **JAVA**
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -77,3 +77,7 @@ public:
     }
 };
 ```
+
+## Complexity
+- **Time:** `O(n)`
+- **Space:** `O(n)`
