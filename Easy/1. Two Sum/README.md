@@ -32,3 +32,7 @@ You can return the answer in any order.
 - **HashMap**
 
 We create a HashMap that contains <Integer, Integer>, the key is the element from the array and value is its index,
+
+We create a for loop to iterate through each element of the array. Each element is mapped to the HashMap,
+
+An operation is perforned `target - element` that is stored to variable `pair`, which represents the number needed to be added to the `current element` to get the `target`. The HashMap is checked if it already contains the number `pair`. If it is, then return the `index of the current element` and the `index of pair`.
