@@ -29,10 +29,26 @@ You can return the answer in any order.
 
 ## SOLUTIONS
 
-- **HashMap**
+### **HashMap**
 
 We create a HashMap that contains <Integer, Integer>, the key is the element from the array and value is its index,
 
 We create a for loop to iterate through each element of the array. Each element is mapped to the HashMap,
 
 An operation is perforned `target - element` that is stored to variable `pair`, which represents the number needed to be added to the `current element` to get the `target`. The HashMap is checked if it already contains the number `pair`. If it is, then return the `index of the current element` and the `index of pair`.
+
+- JAVA
+```java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for(int i = 0; i < nums.length; i++){
+            int pair = target - nums[i];
+            if(map.containsKey(pair))
+                return new int[]{i, map.get(pair)};
+            map.put(nums[i], i);
+        }
+        return new int[]{-1, -1};
+    }
+}
+```
