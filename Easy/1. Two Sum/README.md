@@ -78,6 +78,6 @@ public:
 };
 ```
 
-## Complexity
+### **Complexity**
 - **Time:** `O(n)`
 - **Space:** `O(n)`
