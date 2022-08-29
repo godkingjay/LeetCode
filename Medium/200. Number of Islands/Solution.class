@@ -7,19 +7,19 @@ class Solution {
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
                 if(grid[i][j] == '1') {
-                    n++;
-                    visitIsland(grid, i, j);
+                    n += visitIsland(grid, i, j);
                 }
             }
         }
         return n;
     }
     
-    public void visitIsland(char[][] grid, int r, int c){
-        if(r < 0 || c < 0 || r >= grid.length || c >= grid[r].length || grid[r][c] == '0') return;
+    public int visitIsland(char[][] grid, int r, int c){
+        if(r < 0 || c < 0 || r >= grid.length || c >= grid[r].length || grid[r][c] == '0') return 0;
         grid[r][c] = '0';
         for(int i = 0; i < DIR.length - 1; i++){
             visitIsland(grid, r + DIR[i], c + DIR[i + 1]);
         }
+        return 1;
     }
 }
