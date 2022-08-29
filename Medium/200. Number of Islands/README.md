@@ -51,7 +51,16 @@ Construct **two methods**:
 
 First method iterates through the elements of the array to check if an element is `'1'`, if so, pass its position(`index`) to another method which marks it as *visited(`'0'`)* and checks whether adjacent elements are `'1'` or `'0'` and marks them as *visited*.
 
-First method contains `integer variable n` which represents the *number of island(**0** by default)* and a *nested for loop*. First loop *iterates through the rows(`'i'`)*. Second loop *iterates through the columns(`'j'`)* and an *if statement* that checks if the current element is `'1'`, if so, *increment `'n'`* and call the method `visitIsland(i, j)` that passes the indices `[row][column]` of the current element.
+First method contains `integer variable n` which represents the *number of island(**0** by default)* and a *nested for loop*. First loop *iterates through the rows(`i`)*. Second loop *iterates through the columns(`j`)* and an *if statement* that checks if the current element is `'1'`, if so, *increment `n`* and call the method `visitIsland(i, j)` that passes the indices `[row][column]` of the current element.
+
+Second method is a *recursion*, first statement is an if statement which *exits the method* if:
+- `r < 0` - current row is less than 0. <br/>
+- `c < 0` - current column is less than 0. <br/>
+- `r >= rows` - current row is outside the matrix. <br/>
+- `c >= columns` - current column is outside the matrix. <br/>
+- `mat[r][c] == '0'` - if current position is not an island.
+
+If current position is an island mark it as visited(`0`). Then perform a for loop which calls the method `visitIsland(r + DIR[i], c + DIR[i + 1])`. For loop iterates through the values of the array `DIR` and adds the two adjacent values to the indices of the current element `next element = mat[current row + DIR[i]][current column + DIR[i + 1]]`.
 
 - **JAVA**
 ```java
