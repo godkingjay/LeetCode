@@ -36,12 +36,16 @@ An **island** is surrounded by water and is formed by *connecting adjacent lands
 
 ### Depth-First Search
 
-First, create a variable `mat` which copies the original array so as to not overwrite it. Declare a constant array `DIR` which contains indexes to be added to the index of the current position in the array to go to its adjacent neighbor:
+First, create a variable `mat` which copies the original array so as to not overwrite it. Declare a constant array `DIR` which contains indices to be added to the index of the position of the current element in the array to go to its adjacent neighbor:
+
 `DIR = {1, 0, -1, 0, 1}`:
 - `{1, 0}` = bottom neighbor
 - `{0, -1}` = left neighbor
 - `{-1, 0}` = upper neighbor
 - `{0, 1}` = right neighbor
+
+- **Code:**
+Construct two methods, one that iterates through the elements of the array to check if an element is `'1'`, if so pass its position(index) to another method which marks it as visited(`'0'`) and checks whether adjacent elements are `'1'` or `'0'` and mark it as visited.
 
 - **JAVA**
 ```java
