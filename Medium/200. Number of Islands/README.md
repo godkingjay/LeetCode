@@ -44,10 +44,14 @@ First, create a variable `mat` which copies the original array so as to not over
 - `{-1, 0}` = upper neighbor
 - `{0, 1}` = right neighbor
 
-**CODE:**
+**CODE:** <br/>
 Construct **two methods**:
 - `int numIslands(char[][] grid)` - that accepts a `char array` that represents *`island('1')`* and *`sea('0')`*.
-, one that iterates through the elements of the array to check if an element is `'1'`, if so pass its position(`index`) to another method which marks it as *visited(`'0'`)* and checks whether adjacent elements are `'1'` or `'0'` and marks them as *visited*.
+- `void visitIsland(int r, int c)` - that accepts `two integer` values which represents the indices of the island.
+
+First method iterates through the elements of the array to check if an element is `'1'`, if so, pass its position(`index`) to another method which marks it as *visited(`'0'`)* and checks whether adjacent elements are `'1'` or `'0'` and marks them as *visited*.
+
+First method contains `integer variable n` which represents the *number of island(**0** by default)* and a *nested for loop*. First loop *iterates through the rows(`'i'`)*. Second loop *iterates through the columns(`'j'`)* and an *if statement* that checks if the current element is `'1'`, if so, *increment `'n'`* and call the method `visitIsland(i, j)` that passes the indices `[row][column]` of the current element.
 
 - **JAVA**
 ```java
