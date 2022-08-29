@@ -44,8 +44,10 @@ First, create a variable `mat` which copies the original array so as to not over
 - `{-1, 0}` = upper neighbor
 - `{0, 1}` = right neighbor
 
-- **Code:**
-Construct two methods, one that iterates through the elements of the array to check if an element is `'1'`, if so pass its position(index) to another method which marks it as visited(`'0'`) and checks whether adjacent elements are `'1'` or `'0'` and mark it as visited.
+**CODE:**
+Construct **two methods**:
+- `int numIslands(char[][] grid)` - that accepts a `char array` that represents *`island('1')`* and *`sea('0')`*.
+, one that iterates through the elements of the array to check if an element is `'1'`, if so pass its position(`index`) to another method which marks it as *visited(`'0'`)* and checks whether adjacent elements are `'1'` or `'0'` and marks them as *visited*.
 
 - **JAVA**
 ```java
