@@ -11,8 +11,7 @@ An **island** is surrounded by water and is formed by *connecting adjacent lands
   `["1","1","1","1","0"],` <br/>
   `["1","1","0","1","0"],` <br/>
   `["1","1","0","0","0"],` <br/>
-  `["0","0","0","0","0"] ` <br/>
-`]                       ` <br/>
+  `["0","0","0","0","0"]]` <br/>
 **Output:** `1`
 
 ***
