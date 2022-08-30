@@ -39,20 +39,20 @@ You have to rotate the image **`in-place`**, which means you have to modify the 
 
 This solution is done by getting the *transpose* of the 2D Matrix and *flipping* each of the rows horizontally.
 
-**Matrix:**
+**Matrix:** <br.>
 ![image](https://user-images.githubusercontent.com/89616705/187324681-4108d2d9-b6c3-4aee-bb51-afacd0c15c07.png)
 
-**Transpose:**
+**Transpose:** <br.>
 ![image](https://user-images.githubusercontent.com/89616705/187324777-c37997df-8451-49ee-8ed6-5338e63b0ccc.png)
 
 The *transpose of the matrix* is basically done by swapping the values of `matrix[i][j] and matrix[i][j]`.
 
-**Horizontal Flip:**
+**Horizontal Flip:** <br.>
 ![image](https://user-images.githubusercontent.com/89616705/187325117-d2b9e9f0-5abe-440c-a5ee-43ea8aaff8be.png)
 
 *Flip* the matrix horizontally by swapping the values of `matrix[i][j]` and `matrix[i][matrix.length - 1 - j]`, *where `j < matrix.length/2`*.
 
-**CODE**
+**CODE** <br.>
 
 - **JAVA**
 ```java
@@ -100,3 +100,7 @@ public:
     }
 };
 ```
+
+### Complexity:
+- **Time:** `O(m * n)`, *where `m` is the number of rows and `n` is the number of columns*.
+- **Spaca:** `O(1)`
