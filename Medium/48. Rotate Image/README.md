@@ -44,13 +44,11 @@ This solution is done by getting the *transpose* of the 2D Matrix and *flipping*
 
 **Transpose:** <br/>
 ![image](https://user-images.githubusercontent.com/89616705/187324777-c37997df-8451-49ee-8ed6-5338e63b0ccc.png)
-
-The *transpose of the matrix* is basically done by swapping the values of `matrix[i][j] and matrix[i][j]`.
+- The *transpose of the matrix* is basically done by swapping the values of `matrix[i][j]` and `matrix[i][j]`.
 
 **Horizontal Flip:** <br/>
 ![image](https://user-images.githubusercontent.com/89616705/187325117-d2b9e9f0-5abe-440c-a5ee-43ea8aaff8be.png)
-
-*Flip* the matrix horizontally by swapping the values of `matrix[i][j]` and `matrix[i][matrix.length - 1 - j]`, *where `j < matrix.length/2`*.
+- *Flip* the matrix horizontally by swapping the values of `matrix[i][j]` and `matrix[i][matrix.length - 1 - j]`, *where `j < matrix.length/2`*.
 
 **CODE** <br.>
 
