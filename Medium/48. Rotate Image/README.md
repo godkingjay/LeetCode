@@ -34,3 +34,69 @@ You have to rotate the image **`in-place`**, which means you have to modify the 
 ***
 
 ## SOLUTIONS
+
+### Matrix => Transpose => Horizontal Flip
+
+This solution is done by getting the *transpose* of the 2D Matrix and *flipping* each of the rows horizontally.
+
+**Matrix:**
+![image](https://user-images.githubusercontent.com/89616705/187324681-4108d2d9-b6c3-4aee-bb51-afacd0c15c07.png)
+
+**Transpose:**
+![image](https://user-images.githubusercontent.com/89616705/187324777-c37997df-8451-49ee-8ed6-5338e63b0ccc.png)
+
+The *transpose of the matrix* is basically done by swapping the values of `matrix[i][j] and matrix[i][j]`.
+
+**Horizontal Flip:**
+![image](https://user-images.githubusercontent.com/89616705/187325117-d2b9e9f0-5abe-440c-a5ee-43ea8aaff8be.png)
+
+*Flip* the matrix horizontally by swapping the values of `matrix[i][j]` and `matrix[i][matrix.length - 1 - j]`, *where `j < matrix.length/2`*.
+
+**CODE**
+
+- **JAVA**
+```java
+class Solution {
+    public void rotate(int[][] matrix) {
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = i; j < matrix[0].length; j++){
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = t;
+            }
+        }
+        
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix.length/2; j++){
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[i][matrix.length - 1 - j];
+                matrix[i][matrix.length - 1 - j] = t;
+            }
+        }
+    }
+}
+```
+
+- **C**++
+```cpp
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) {
+        for(int i = 0; i < matrix.size(); i++){
+            for(int j = i; j < matrix[0].size(); j++){
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = t;
+            }
+        }
+        
+        for(int i = 0; i < matrix.size(); i++){
+            for(int j = 0; j < matrix.size()/2; j++){
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[i][matrix.size() - 1 - j];
+                matrix[i][matrix.size() - 1 - j] = t;
+            }
+        }
+    }
+};
+```
