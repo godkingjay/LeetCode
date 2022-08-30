@@ -33,9 +33,9 @@ You have to rotate the image **`in-place`**, which means you have to modify the 
 
 ***
 
-## SOLUTIONS
+# SOLUTIONS
 
-### Matrix => Transpose => Horizontal Flip
+## Matrix => Transpose => Horizontal Flip(In-place)
 
 This solution is done by getting the *transpose* of the 2D Matrix and *flipping* each of the rows horizontally.
 
