@@ -12,3 +12,21 @@ Determine if a `9 x 9` Sudoku board is *valid*. Only the filled cells need to be
     - Only the filled cells need to be validated according to the mentioned rules.
 
 ***
+
+### Example 1
+![image](https://user-images.githubusercontent.com/89616705/187617901-bcf09e97-29e0-4cd2-a567-36b013794fd7.png)
+
+**Input:**
+
+    board = 
+    [["5","3",".",".","7",".",".",".","."]
+    ,["6",".",".","1","9","5",".",".","."]
+    ,[".","9","8",".",".",".",".","6","."]
+    ,["8",".",".",".","6",".",".",".","3"]
+    ,["4",".",".","8",".","3",".",".","1"]
+    ,["7",".",".",".","2",".",".",".","6"]
+    ,[".","6",".",".",".",".","2","8","."]
+    ,[".",".",".","4","1","9",".",".","5"]
+    ,[".",".",".",".","8",".",".","7","9"]]
+    
+**Output:** `true`
