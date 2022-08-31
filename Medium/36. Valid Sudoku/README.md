@@ -55,8 +55,50 @@ Determine if a `9 x 9` Sudoku board is *valid*. Only the filled cells need to be
 
 ## HashSet
 
-The idea is to create a `HashSet` for each:
+The idea is to create a `HashSet` that stores *<Characters>* for each:
 
     - row
     - column
     - and 3 x 3 sub-boxes of the grid.
+
+And loop through each row, column and sub-box of the grid whilst adding the elements to the HashSet.
+    
+First is the create two for loops that loops through the row(`[i]`, *column for the `column` HashSet*) and columns(`[j]`, *row for the `column` HashSet*) of the grid. As for the sub-boxes, indices are calculated as such:
+
+    - rowIndex = (3*(i/3)) + j/3;
+    - columnIndex = (3*(j%3)) + j%3;
+
+<br/>
+    
+At the outer for loop is where the `HashSets` for row, column and sub-box are created.
+
+Inside the inner for loop are three conditional statements:
+    
+    - a condition whether the current element at row is not '.' and is already added to the row HashSet. If condition is true then Sudoku is invalid, thus return false.
+    - a condition whether the current element at column is not '.' and is already added to the column HashSet. If condition is true then Sudoku is invalid, thus return false.
+    - a condition whether the current element at sub-box is not '.' and is already added to the sub-box HashSet. If condition is true then Sudoku is invalid, thus return false.
+
+If we looped to the whole array then `return true`, which means that it is a valid Sudoku.
+
+## Code
+
+### JAVA
+```java
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        for(int i = 0; i < 9; i++){
+            Set<Character> row = new HashSet<Character>();
+            Set<Character> col = new HashSet<Character>();
+            Set<Character> sqr = new HashSet<Character>();
+            for(int j = 0; j < 9; j++){
+                if(board[i][j] != '.' && !row.add(board[i][j])) return false;
+                if(board[j][i] != '.' && !col.add(board[j][i])) return false;
+                int rowIdx = (3*(i/3)) + j/3;
+                int colIdx = (3*(i%3)) + j%3;
+                if(board[rowIdx][colIdx] != '.' && !sqr.add(board[rowIdx][colIdx])) return false;
+            }
+        }
+        return true;
+    }
+}
+```
