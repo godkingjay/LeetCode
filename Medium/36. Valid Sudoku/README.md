@@ -54,3 +54,9 @@ Determine if a `9 x 9` Sudoku board is *valid*. Only the filled cells need to be
 # SOLUTIONS
 
 ## HashSet
+
+The idea is to create a `HashSet` for each:
+
+    - row
+    - column
+    - and 3 x 3 sub-boxes of the grid.
