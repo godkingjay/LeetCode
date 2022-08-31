@@ -66,10 +66,8 @@ And loop through each row, column and sub-box of the grid whilst adding the elem
     
 First is the create two for loops that loops through the row(`[i]`, *column for the `column` HashSet*) and columns(`[j]`, *row for the `column` HashSet*) of the grid. As for the sub-boxes, indices are calculated as such:
 
-    - rowIndex = (3*(i/3)) + j/3;
-    - columnIndex = (3*(j%3)) + j%3;
-
-<br/>
+    - rowIndex = (3*(i/3)) + j/3.
+    - columnIndex = (3*(j%3)) + j%3.
     
 At the outer for loop is where the `HashSets` for row, column and sub-box are created.
 
