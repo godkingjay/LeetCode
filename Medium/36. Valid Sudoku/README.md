@@ -1,4 +1,4 @@
-# Problem #36 ([Valid Sudoko](https://leetcode.com/problems/valid-sudoku/submissions/) | Array, Hash Table, Matrix)
+# Problem #36 ([Valid Sudoku](https://leetcode.com/problems/valid-sudoku/submissions/) | Array, Hash Table, Matrix)
 
 Determine if a `9 x 9` Sudoku board is *valid*. Only the filled cells need to be validated according to the following rules:
 
