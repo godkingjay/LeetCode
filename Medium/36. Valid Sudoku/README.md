@@ -103,4 +103,4 @@ class Solution {
 ```
 
 ### COMPLEXITY
-- *Time:* `O(n^2)` <br/>
+- **Time:** `O(n^2)` <br/>
