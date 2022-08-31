@@ -80,9 +80,9 @@ Inside the inner for loop are three conditional statements:
 
 If we looped to the whole array then `return true`, which means that it is a valid Sudoku.
 
-## Code
+### Code
 
-### JAVA
+- **JAVA**
 ```java
 class Solution {
     public boolean isValidSudoku(char[][] board) {
