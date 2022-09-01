@@ -39,4 +39,7 @@ In this case, the max area of water (blue section) the container can contain is 
 <br/>
 
 ## Constraints
+- `n == height.length`
+- `2 <= n <= 105`
+- `0 <= height[i] <= 104`
 
