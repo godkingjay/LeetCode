@@ -30,3 +30,38 @@ Given a binary tree `root`, a *node X* in the tree is named **good** if in the p
 <br/>
 
 ## Example 2
+![image](https://user-images.githubusercontent.com/89616705/187807346-dbc135c9-ccfe-41b2-9dc9-a4a76b363eb3.png)
+
+**Input:**
+
+    root = [3,3,null,4,2]
+<br/>
+
+**Output:**
+
+    3
+<br/>
+
+**Explanation:**
+
+    Node 2 -> (3, 3, 2) is not good, because "3" is higher than it.
+<br/>
+
+## Example 3
+
+**Input:**
+
+    root = [1]
+<br/>
+
+**Output:*
+
+    1
+<br/>
+
+**Explanation:**
+
+    Root is considered as good.
+<br/>
+
+#Solutions
