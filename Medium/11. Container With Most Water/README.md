@@ -54,13 +54,20 @@ The idea is get two heights that can contain the largest amount of water.
 
 `width` here represents the distance between the two heights(*e.g. indices `(1, 5)` has a `width` of `4` since `5 - 1 = 4`*). `height` represents the minimum between two heights.
 
+The main idea is the have *two pointers* that represents the indices of two heights(*left and right heights*), by default `leftIndex = 0` and `rightIndex = height.length - 1`. And a *variable* `maxArea` that stores the largest area where water can be contained.
 ```cpp
 int maxArea = 0;
 int leftIndex = 0, rightIndex = height.length - 1;
 ```
-The main idea is the have *two pointers* that represents the indices of two heights(*left and right heights*), by default `leftIndex = 0` and `rightIndex = height.length - 1`. And a *variable* `maxArea` that stores the largest area where water can be contained.
+<br/>
 
 Next is to loop through the array of `height` while (`leftIndex` < `rightIndex`) holds true.
+```cpp
+while(leftIndex < rightIndex){
+    //  ...statements
+}
+```
+<br/>
 
 
 
