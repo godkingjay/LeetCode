@@ -36,7 +36,6 @@ In this case, the max area of water (blue section) the container can contain is 
 **Output:**
 
     1
-<br/>
 
 ## Constraints
 - `n == height.length`
@@ -45,7 +44,15 @@ In this case, the max area of water (blue section) the container can contain is 
 
 # Solutions
 
-## 
+## Proof by Formula
+
+We have an array of integers that represents heights. We have to pick two heights in which when filled water denotes the value of *Area(`A`)*, where *A* represents the area the water takes up.
+
+The idea is get two heights that can contain the largest amount of water.
+
+    A = width * height
+
+`width` here represents the distance between the two heights(*e.g. indices `(1, 5)` has a `width` of `4` since `5 - 1 = 4`*). `height` represents the minimum between two heights.
 
 ### Code
 
