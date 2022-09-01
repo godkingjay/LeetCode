@@ -80,11 +80,13 @@ To check whether a node is a **good** node, create a *recursive method* with arg
 void goodNode(TreeNode root, int lastMax){}
 ```
 - the method should take a *TreeNode `root`* which refers to the current node and *int `lastMax`* which refers to the greatest value of the path.
+<br/>
 
 ```cpp
 if(root == null) return;
 ```
 - return if at the end of Tree path.
+<br/>
 
 ```cpp
 if(root.val >= lastMax){
@@ -93,12 +95,14 @@ if(root.val >= lastMax){
 }
 ```
 - if the value of the current node is greater than or equal to `lastMax` then the current node is a **good** node, thus increment `n` and change the value of `lastMax` to the value of the current node.
+<br/>
 
 ```cpp
 goodNode(TreeNode root.left, lastMax);
 goodNode(TreeNode root.right, lastMax);
 ```
 - check whether the left and right nodes are **good** nodes.
+<br/>
 
 ### Code
 
