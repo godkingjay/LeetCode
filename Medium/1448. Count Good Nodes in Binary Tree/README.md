@@ -86,6 +86,14 @@ if(root == null) return;
 ```
 - return if at the end of Tree path.
 
+```java
+if(root.val >= lastMax){
+    n++;
+    lastMax = root.val;
+}
+```
+- if the value of the current node is greater than or equal to `lastMax` then the current node is a **good** node, thus increment `n` and change the value of `lastMax` to the value of the current node.
+
 ### Code
 
 - **JAVA**
