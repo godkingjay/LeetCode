@@ -81,6 +81,11 @@ void goodNode(TreeNode root, int lastMax){}
 ```
 - the method should take a *TreeNode `root`* which refers to the current node and *int `lastMax`* which refers to the greatest value of the path.
 
+```java
+if(root == null) return;
+```
+- return if at the end of Tree path.
+
 ### Code
 
 - **JAVA**
