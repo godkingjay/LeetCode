@@ -43,3 +43,10 @@ In this case, the max area of water (blue section) the container can contain is 
 - `2 <= n <= 105`
 - `0 <= height[i] <= 104`
 
+# Solutions
+
+## 
+
+### Complexity
+- **Time:** `O(n)`
+- **Space:** `O(1)`
