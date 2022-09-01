@@ -51,6 +51,7 @@ We have an array of integers that represents heights. We have to pick two height
 The idea is get two heights that can contain the largest amount of water.
 
     A = width * height
+<br/>
 
 `width` here represents the distance between the two heights(*e.g. indices `(1, 5)` has a `width` of `4` since `5 - 1 = 4`*). `height` represents the minimum between two heights.
 
@@ -69,7 +70,24 @@ while(leftIndex < rightIndex){
 ```
 <br/>
 
+**The *while* loop is structured as such:**
+```cpp
+maxArea = max(maxArea, min(height[leftIndex], height[rightIndex]) * (rightIndex - leftIndex));
+```
+- First is to assign the value of `maxArea` to which has the larger area, is it the current `maxArea` or the current Area of heights at indices `(leftIndex, rightIndex)`.
 
+```cpp
+if(height[leftIndex] < height[rightIndex])
+    leftIndex++;
+else
+    rightIndex;
+```
+- Move the pointers, if the *left height is less than the right height* then we should move the left height to the its succeeding height, while, if greater than, move the right height to the preceded height.
+
+Once, the **while** loop ends, `maxArea`` should already be determined and can already be returned.
+```cpp
+return maxArea
+```
 
 ### Code
 
