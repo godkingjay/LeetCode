@@ -77,8 +77,9 @@ To check whether a node is a **good** node, create a *recursive method* with arg
 
 **Method is structured as such:**
 ```java
-//1//   class
+void goodNode(TreeNode root, int lastMax){}
 ```
+- the method should take a *TreeNode `root`* which refers to the current node and *int `lastMax`* which refers to the greatest value of the path.
 
 ### Code
 
