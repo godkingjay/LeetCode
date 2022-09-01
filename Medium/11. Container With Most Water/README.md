@@ -84,7 +84,7 @@ else
 ```
 - Move the pointers, if the *left height is less than the right height* then we should move the left height to the its succeeding height, while, if greater than, move the right height to the preceded height.
 
-Once, the **while** loop ends, `maxArea`` should already be determined and can already be returned.
+Once, the **while** loop ends, `maxArea` should already be determined and can already be returned.
 ```cpp
 return maxArea
 ```
