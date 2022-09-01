@@ -64,4 +64,15 @@ Given a binary tree `root`, a *node X* in the tree is named **good** if in the p
     Root is considered as good.
 <br/>
 
-#Solutions
+# Solutions
+
+## Recursion
+
+### Code
+
+- **JAVA**
+```java
+
+```
+
+### Complexity
