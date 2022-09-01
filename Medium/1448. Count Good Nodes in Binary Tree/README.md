@@ -70,8 +70,15 @@ Given a binary tree `root`, a *node X* in the tree is named **good** if in the p
 
 The idea is to declare a *global variable(`n`)* to represent the number of **good** nodes. A node is a **good** node if:
 
-    - if the path from the root node to node X does not contain a node with value greater than that of node X.
+    - the path from the root node to node X does not contain a node with value greater than that of node X.
 <br/>
+
+To check whether a node is a **good** node, create a *recursive method* with arguments *(TreeNode `root`, int `lastMax`)*. `root` represents the current node while `lastMax` represents the node with the greates value in the current path.
+
+**Method is structured as such:**
+```java
+//1//   class
+```
 
 ### Code
 
