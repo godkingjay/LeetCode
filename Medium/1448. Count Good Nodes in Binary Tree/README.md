@@ -68,6 +68,11 @@ Given a binary tree `root`, a *node X* in the tree is named **good** if in the p
 
 ## Recursion
 
+The idea is to declare a *global variable(`n`)* to represent the number of **good** nodes. A node is a **good** node if:
+
+    - if the path from the root node to node X does not contain a node with value greater than that of node X.
+<br/>
+
 ### Code
 
 - **JAVA**
