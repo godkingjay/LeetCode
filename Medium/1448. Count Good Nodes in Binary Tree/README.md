@@ -128,3 +128,5 @@ class Solution {
 ```
 
 ### Complexity
+- **Time:** `O(n)`
+- **Space:** `O(height)`
