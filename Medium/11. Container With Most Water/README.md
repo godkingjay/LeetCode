@@ -7,3 +7,21 @@ Find two lines that together with the x-axis form a container, such that the con
 *Return the maximum amount of water a container can store.*
 
 **Notice** that you may not slant the container.
+
+## Example 1
+![image](https://user-images.githubusercontent.com/89616705/187815178-fc833b50-3d87-4e95-a17c-155d0d81a3a8.png)
+
+**Input:**
+
+    height = [1,8,6,2,5,4,8,3,7]
+<br/>
+
+**Output:**
+
+    49
+<br/>
+
+**Explanation:**
+
+    The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+
