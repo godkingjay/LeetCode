@@ -88,5 +88,8 @@ while x > rev:
 <br/>
 
 ```python3
-
+return x == rev or x == rev//10
 ```
+- This basically means that if the left half of `x` is equal to the reverse of its right half `rev` then `return True`, if the length of `x` is odd then remove the last digit of `rev`.
+
+### Code
