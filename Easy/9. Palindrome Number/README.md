@@ -81,4 +81,12 @@ rev = 0
 
 ```python3
 while x > rev:
+    rev = rev * 10 + rev // 10
+    x //= 10
+```
+- The while loop will persist until `x` is half its length. *First statement* will change the value of `rev` to the reverse of the right half of `x`. *Second statement* will change the value of `x` to its left half. If the length of `x` is odd then the excess digit which is the middle digit will be added to `rev`.
+<br/>
+
+```python3
+
 ```
