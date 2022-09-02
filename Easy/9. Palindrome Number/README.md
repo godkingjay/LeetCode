@@ -59,3 +59,13 @@ An integer is a *palindrome* when it reads the same backward as forward.
 # Solutions
 
 ## Reverse till half then compare
+
+The idea is to compare the left half of `n` to the reverse of its right half. If they are equal then `n` is ***palindrome***.
+
+If `n < 0` or if, when `n != 0` and `n % 10 == 0`, which means that `n` is a multiple of `10`, then `n` is not a ***palindrome***.
+
+**The code goes as such:**
+```python3
+if x < 0 or (x != 0 and x % 10 == 0):
+    return False
+```
