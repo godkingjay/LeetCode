@@ -50,6 +50,6 @@ An integer is a *palindrome* when it reads the same backward as forward.
 **Explanation:**
 
     Reads 01 from right to left. Therefore it is not a palindrome.
-<br/>
 
 ## Constraints
+- -2<sup>31/<sup> <= x <= 2<sup>31/<sup> - 1
