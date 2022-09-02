@@ -60,9 +60,9 @@ An integer is a *palindrome* when it reads the same backward as forward.
 
 ## Reverse till half then compare
 
-The idea is to compare the left half of `n` to the reverse of its right half. If they are equal then `n` is ***palindrome***.
+The idea is to compare the left half of `x` to the reverse of its right half. If they are equal then `x` is ***palindrome***.
 
-If `n < 0` or if, when `n != 0` and `n % 10 == 0`, which means that `n` is a multiple of `10`, then `n` is not a ***palindrome***.
+If `x < 0` or if, when `x != 0` and `x % 10 == 0`, which means that `x` is a multiple of `10`, then `x` is not a ***palindrome***.
 <br/>
 
 **The code goes as such:**
@@ -70,9 +70,15 @@ If `n < 0` or if, when `n != 0` and `n % 10 == 0`, which means that `n` is a mul
 if x < 0 or (x != 0 and x % 10 == 0):
     return False
 ```
-- This means that if `n` is a negative number or if `n` a multiple of `10`, then `n` is not a ***palindrome*** thus `return False`.
+- This means that if `x` is a negative number or if `x` a multiple of `10`, then `x` is not a ***palindrome*** thus `return False`.
 <br/>
 
 ```python3
+rev = 0
+```
+- variable `rev` will store the reverse of the right half of `x`.
+<br/>
 
+```python3
+while x > rev:
 ```
