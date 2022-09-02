@@ -19,5 +19,16 @@ Given the `root` of a binary tree, return *the average value of the nodes* on ea
 
     The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
     Hence return [3, 14.5, 11].
-    
-    
+
+## Example 2
+![image](https://user-images.githubusercontent.com/89616705/188056604-9b5c84ee-8230-41ef-9292-3aec863c3977.png)
+
+**Input:**
+
+    root = [3,9,20,15,7]
+<br/>
+
+**Output:**
+
+    [3.00000,14.50000,11.00000]
+<br/>
