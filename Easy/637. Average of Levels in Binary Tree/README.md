@@ -35,3 +35,22 @@ Given the `root` of a binary tree, return *the average value of the nodes* on ea
 ## Constraints
 - The number of nodes in the tree is in the range [1, 104].
 - -2<sup>31</sup> <= Node.val <= 2<sup>31</sup> - 1
+
+# Solutions
+
+## Breadth First Search
+
+The idea is to create a `Queue` which stores the nodes in each level of the ***Binary Tree***, *by default `root` node is inserted first*. For each node in a level, the average of the sum is stored inside a `List`.
+
+**The code is structured as such:**
+
+```java
+List<Double> list = new ArrayList<Double>();
+```
+- create a list which will stores ***double*** values that corresponding the average of the values for each level of the ***Binary Tree***.
+
+```java
+Queue<TreeNode> q = new LinkedList<>();
+q.add(root);
+```
+- create a ***Queue*** which will store the nodes in a level. Add the `root` *node* to the queue.
