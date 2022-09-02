@@ -94,6 +94,7 @@ while(!q.empty()){
 - The *for loop* here gets the value of the nodes in a level and adds it to `sum`. Once the value of the node is added to the sum it is then removed from the ***Queue***.
 - The *if statements* here will store the nodes at the next level(*except null*) that will then be used in the next iteration.
 - Exiting the *for loop*, the average is of a level is added to the ***List***.
+<br/>
 
 ***Exiting the while loop...***
 
@@ -101,3 +102,77 @@ while(!q.empty()){
 return list;
 ```
 - return the list which contains the average value of each level of the ***Binary Tree***.
+
+### Code
+
+- **Java**
+```java
+class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList<Double>();
+        Queue<TreeNode> q = new LinkedList<TreeNode>();
+        q.add(root);
+        while(!q.isEmpty()){
+            int n = q.size();
+            double sum = 0.0;
+            for(int i = 0; i < n; i++){
+                TreeNode curr = q.poll();
+                sum += curr.val;
+                if(curr.left != null) q.add(curr.left);
+                if(curr.right != null) q.add(curr.right);
+            }
+            list.add(sum/n);
+        }
+        return list;
+    }
+}
+```
+<br/>
+
+- **C**++
+```cpp
+class Solution {
+public:
+    vector<double> averageOfLevels(TreeNode* root) {
+        vector<double> list;
+        queue<TreeNode*> q;
+        q.push(root);
+        while(!q.empty()){
+            int n = q.size();
+            double sum = 0.0;
+            for(int i = 0; i < n;  i++){
+                TreeNode* node = q.front();
+                q.pop();
+                sum += node->val;
+                if(node->left) q.push(node->left);
+                if(node->right) q.push(node->right);
+            }
+            list.push_back(sum/n);
+        }
+        return list;
+    }
+};
+```
+<br/>
+
+- **Python3**
+```python3
+class Solution:
+    def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
+        list = []
+        q = [root]
+        while len(q):
+            n = len(q)
+            sum = 0
+            for i in range(n):
+                node = q.pop(0)
+                sum += node.val
+                if node.left: q.append(node.left)
+                if node.right: q.append(node.right)
+            list.append(sum/n)
+        return list
+```
+
+### Complexity
+- **Time:** `O(n)`
+- **Space:** `O(n)`
