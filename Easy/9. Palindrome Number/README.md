@@ -36,3 +36,20 @@ An integer is a *palindrome* when it reads the same backward as forward.
 
     From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
+## Example 3
+**Input:**
+
+    x = 10
+<br/>
+
+**Output:**
+
+    false
+<br/>
+
+**Explanation:**
+
+    Reads 01 from right to left. Therefore it is not a palindrome.
+<br/>
+
+## Constraints
