@@ -93,3 +93,48 @@ return x == rev or x == rev//10
 - This basically means that if the left half of `x` is equal to the reverse of its right half `rev` then `return True`, if the length of `x` is odd then remove the last digit of `rev`.
 
 ### Code
+- **Java**
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x<0 || (x != 0 && x % 10 == 0)) return false;
+        int rev = 0;
+        while(x > rev){
+            rev = rev * 10 + x % 10;
+            x /= 10;
+        }
+        return (x == rev || x == rev/10);
+    }
+}
+```
+<br/>
+
+- **C**++
+```cpp
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if (x < 0 || (x != 0 && x % 10 == 0)) return false;
+        int rev = 0;
+        while(x > rev) {
+            rev = rev * 10 + x%10;
+            x /= 10;
+        }
+        return (x == rev || x == rev/10);
+    }
+};
+```
+<br/>
+
+- **Python3**
+```python3
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x != 0 and x % 10 == 0):
+            return False
+        rev = 0
+        while x > rev:
+            rev = rev * 10 + x % 10
+            x //= 10
+        return x == rev or x == rev//10
+```
