@@ -140,5 +140,5 @@ class Solution:
 ```
 
 ### Complexity
-- **Time:** `O(n)`
+- **Time:** `O(log n)`
 - **Space:** `O(1)`
