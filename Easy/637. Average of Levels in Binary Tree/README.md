@@ -1,6 +1,6 @@
 # Problem #637 ([]() | Binary Tree, Breadth First Search, Depth First Search, Tree)
 
-Given the `root` of a binary tree, return *the average value of the nodes* on each level in the form of an array. Answers within `10`<sup>-5</sup> of the actual answer will be accepted.
+Given the `root` of a binary tree, return *the average value of the nodes* on each level in the form of an array. Answers within `$$10^{-5}$$` of the actual answer will be accepted.
 
 ## Example 1
 ![image](https://user-images.githubusercontent.com/89616705/188054900-720e869c-e4ad-446f-86e9-ac251aa1191d.png)
