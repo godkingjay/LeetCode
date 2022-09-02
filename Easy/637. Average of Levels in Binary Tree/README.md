@@ -41,9 +41,9 @@ Given the `root` of a binary tree, return *the average value of the nodes* on ea
 ## Breadth First Search
 
 The idea is to create a `Queue` which stores the nodes in each level of the ***Binary Tree***, *by default `root` node is inserted first*. For each node in a level, the average of the sum is stored inside a `List`.
+<br/>
 
 **The code is structured as such:**
-
 ```cpp
 vector<double> list;
 ```
@@ -66,7 +66,6 @@ while(!q.empty()){
 <br/>
 
 **Inside the while loop:**
-
 ```cpp
 while(!q.empty()){
     int n = q.size();
