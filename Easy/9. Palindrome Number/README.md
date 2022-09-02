@@ -138,3 +138,7 @@ class Solution:
             x //= 10
         return x == rev or x == rev//10
 ```
+
+### Complexity
+- **Time:** `O(log n)`
+- **Space:** `O(1)`
