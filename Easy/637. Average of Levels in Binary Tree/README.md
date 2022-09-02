@@ -74,6 +74,7 @@ while(!q.empty()){
 }
 ```
 - Create the variables `n` and `sum` which represents the current size of the ***Queue****(The number of nodes in a level)* and the sum of the values in a level.
+<br/>
 
 ```cpp
 while(!q.empty()){
@@ -89,4 +90,14 @@ while(!q.empty()){
     list.append(sum/n);
 }
 ```
-- This iterates through the value of 
+- The *while loop* here iterates through every level of the ***Binary Tree***.
+- The *for loop* here gets the value of the nodes in a level and adds it to `sum`. Once the value of the node is added to the sum it is then removed from the ***Queue***.
+- The *if statements* here will store the nodes at the next level(*except null*) that will then be used in the next iteration.
+- Exiting the *for loop*, the average is of a level is added to the ***List***.
+
+***Exiting the while loop...***
+
+```cpp
+return list;
+```
+- return the list which contains the average value of each level of the ***Binary Tree***.
