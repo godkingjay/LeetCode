@@ -48,9 +48,45 @@ The idea is to create a `Queue` which stores the nodes in each level of the ***B
 vector<double> list;
 ```
 - create a list which will stores ***double*** values that corresponding the average of the values for each level of the ***Binary Tree***.
+<br/>
 
 ```cpp
 queue<TreeNode*> q;
-q.add(root);
+q.push(root);
 ```
-- create a ***Queue*** which will store the nodes in a level. Add the `root` *node* to the queue.
+- Create a ***Queue*** which will store the nodes in a level. Add the `root` *node* to the queue.
+<br/>
+
+```cpp
+while(!q.empty()){
+    // ...statements
+}
+```
+- Execute statements while ***Queue*** is not empty.
+<br/>
+
+**Inside the while loop:**
+
+```cpp
+while(!q.empty()){
+    int n = q.size();
+    double sum = 0.0;
+}
+```
+- Create the variables `n` and `sum` which represents the current size of the ***Queue****(The number of nodes in a level)* and the sum of the values in a level.
+
+```cpp
+while(!q.empty()){
+    int n = q.size();
+    double sum = 0.0;
+    for(int i = 0; i < n; i++){
+        TreeNode* node = q.front();
+        q.pop();
+        sum += q->val;
+        if(node->left) q.push(node.left);
+        if(node->right) q.push(node.right);
+    }
+    list.append(sum/n);
+}
+```
+- This iterates through the value of 
