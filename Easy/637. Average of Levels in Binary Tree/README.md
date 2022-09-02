@@ -31,4 +31,7 @@ Given the `root` of a binary tree, return *the average value of the nodes* on ea
 **Output:**
 
     [3.00000,14.50000,11.00000]
-<br/>
+
+## Constraints
+- The number of nodes in the tree is in the range [1, 104].
+- -2<sup>31</sup> <= Node.val <= 2<sup>31</sup> - 1
