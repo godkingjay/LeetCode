@@ -52,4 +52,6 @@ An integer is a *palindrome* when it reads the same backward as forward.
     Reads 01 from right to left. Therefore it is not a palindrome.
 
 ## Constraints
-- -2<sup>31/<sup> <= x <= 2<sup>31/<sup> - 1
+- -2<sup>31</sup> <= x <= 2<sup>31</sup> - 1
+
+## Follow Up: `Could you solve it without converting the integer to a string?`
