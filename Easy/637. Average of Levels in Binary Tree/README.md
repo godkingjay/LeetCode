@@ -44,13 +44,13 @@ The idea is to create a `Queue` which stores the nodes in each level of the ***B
 
 **The code is structured as such:**
 
-```java
-List<Double> list = new ArrayList<Double>();
+```cpp
+vector<double> list;
 ```
 - create a list which will stores ***double*** values that corresponding the average of the values for each level of the ***Binary Tree***.
 
-```java
-Queue<TreeNode> q = new LinkedList<>();
+```cpp
+queue<TreeNode*> q;
 q.add(root);
 ```
 - create a ***Queue*** which will store the nodes in a level. Add the `root` *node* to the queue.
