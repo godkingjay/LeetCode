@@ -1,4 +1,4 @@
-//  Depth First Search
+//  Breadth First Search
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> list = new ArrayList<Double>();
