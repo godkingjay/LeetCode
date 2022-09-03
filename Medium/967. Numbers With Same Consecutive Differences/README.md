@@ -159,7 +159,7 @@ for(int i = 0; i < 10; i++){
 
 - Once the new `num` is added to our `Queue`, our ***while loop*** still hold thus continue executing its statements for each values in the `Queue` until all values are greater than `min`, which will then satisfy the if condition where we will add the values to our list and ***empty*** our `Queue`. Once the `Queue` is empty, exit the ***while loop*** and increment `i` thus beginning another iteration for a number starting at `2`, repeat loop until `i = 9`.
 
-![image](https://user-images.githubusercontent.com/89616705/188290756-2cbff345-ecc1-4db0-b4a5-b336149106c9.png)
+![image](https://user-images.githubusercontent.com/89616705/188290842-0c0c870e-ecf7-40a7-8b29-971efff780a7.png)
 
 ![image](https://user-images.githubusercontent.com/89616705/188290778-c5e81856-64a3-4633-a099-ff05f95d5119.png)
 
