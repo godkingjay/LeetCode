@@ -87,6 +87,14 @@ Problem asks us to return a list of values(*integers*) in which the **absolute d
 
 ## Breadth First Search(Iterative)
 
+The basic idea in an *iterative* **BFS** is to create a `List` where we will store the `n` digit numbers. We will use a ***for loop*** to loop from `1 - 9` which corresponds to the beginning of a number(`i`). For each iteration, we will create a `Queue` where we will first store(`i`) then process it inside a ***while loop***. Inside the ***while loop*** we will determine all possible combination of numbers until our number reaches `n` digits. When the number satisfies all condition and rule, add it to te `List`.
+
+***Code Structure***
+```cpp
+vector<int> list;
+min = pow(10, n - 1);
+```
+
 ### Code
 - **Java**
 ```java
