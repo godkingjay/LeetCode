@@ -146,7 +146,13 @@ for(int i = 0; i < 10; i++){
     
     `num = num * 10 + {pair}`, `pair` can either be `x + k = pair` or `x - k = pair` or both depending on the conditions satisfied by `x`.
 
+- Once the new `num` is added to our `Queue`, our ***while loop*** still hold thus continue executing its statements for each values in the `Queue` its values are greater than `min`, which will then satisfies the condition where we will add the values to our list and ***empty*** our `Queue`. Once the `Queue` is empty, exit the ***while loop*** and increment `i` thus beginning another iteration for a number starting at `2`, repeat loop until `i = 9`.
+<br/>
 
+```cpp
+return list;
+```
+- Once we exit the ***for loop***, return our `List` which should contain all values that are `n` digits and for each ***two consecutive digits***, they have an ***absolute difference*** of `k`.
 
 ### Code
 - **Java**
