@@ -53,7 +53,7 @@ Problem asks us to return a list of values(*integers*) in which the **absolute d
     Output: [151,159,262,373,404,484,515,595,626,737,840,848,951,959]
 - Notice that some number of *two consecutive digits* has the same first digit but different second digit.
 - Digits such as:
-    - 
+    - Hello
 
 ## Breadth First Search(Iterative)
 
