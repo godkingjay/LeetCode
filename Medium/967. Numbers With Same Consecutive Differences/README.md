@@ -39,7 +39,7 @@ public:
     vector<int> numsSameConsecDiff(int n, int k) {
         if(n == 1) return vector<int>{k};
         vector<int> list;
-        int min = pow(10, n -1);
+        int min = pow(10, n - 1);
         for(int i = 1; i < 10; i++){
             queue<int> q;
             q.push(i);
