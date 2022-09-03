@@ -238,3 +238,7 @@ class Solution:
         return list
 ```
 ![image](https://user-images.githubusercontent.com/89616705/188257741-439d2469-cdf0-4e62-ad89-8f86642cfac6.png)
+
+### Complexity
+- **Time:** `O(n)`
+- **Space:** `O(n)`
