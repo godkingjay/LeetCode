@@ -137,6 +137,16 @@ for(int i = 0; i < 10; i++){
             q.push(num * 10 + x + k)
     }
 ```
+- Once we pop a number from our `Queue` and assign to `num`, we will check whether that `num` is greater than or equal to our `min`, if it is, then add it to our `List` and `continue`. If not, then get the last digit of our `num` then find its pair/s of number in which their `absolute difference` is `k`. `x` should satisfy these conditions:
+    1. `k > 0` and `x - k >= 0`
+    2. `x + k < 10`
+
+- If only one of the conditions is satisfied then `x` only has one pair.
+- Add the resulting number to our `Queue` when that pair of `x` is added as a last digit of our number.
+    
+    `num = num * 10 + {pair}`, `pair` can either be `x + k = pair` or `x - k = pair` or both depending on the conditions satisfied by `x`.
+
+
 
 ### Code
 - **Java**
