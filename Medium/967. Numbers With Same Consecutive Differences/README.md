@@ -41,7 +41,7 @@ You may return the answer in `any order`.
 
 ### Basic Idea
 
-The problem asks us to return a list of values(*integers*) in which each value is `n` digits and the **absolute difference** of each *two consecutive digits* is `k`.
+The problem asks us to return a list of values(*integers*) in which each value is `n` digits and the **absolute difference** of each *two consecutive digits* is `k`. If `n` is `3`, then the values inside the `Queue` should be `3` digits.
 
 **Sample** <br/>
 
@@ -109,7 +109,9 @@ for(int i = 0; i < 10; i++){
     q.push(i);
 }
 ```
-- We will iterate from `1 - 9`, these number is assigned to `i` which corresponds to the beginning of our number. We will then create a `Queue` where we will store the numbers, where, for each number, we will determine the next digit where the ***absolute difference*** of the next digit and preceded digit is `k`. By default, the `Queue` first contains the first digit of our number which is `i`.
+- We will iterate from `1 - 9`, these numbers are assigned to `i` which corresponds to the beginning of our number. We will then create a `Queue` where we will store the numbers, where for each number, we will determine the next digit where the ***absolute difference*** of the next digit and preceded digit is `k`. By default, the `Queue` first contains the first digit of our number which is `i`.
+![image](https://user-images.githubusercontent.com/89616705/188289824-a2513879-c599-4b73-89f2-1fdc1eed89b6.png)
+
 <br/>
 
 ```cpp
@@ -123,6 +125,7 @@ for(int i = 0; i < 10; i++){
 }
 ```
 - for each iteration, we will execute a **while loop** until our `Queue` is empty. Inside the ***while loop***, we will get the first value in our `Queue` and assign it to `num` and remove it from our `Queue`.
+![image](https://user-images.githubusercontent.com/89616705/188290162-4e639c3c-0e99-4756-9fae-8d24420aa21f.png)
 <br/>
 
 ```cpp
