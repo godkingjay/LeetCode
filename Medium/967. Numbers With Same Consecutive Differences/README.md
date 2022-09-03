@@ -52,7 +52,7 @@ The problem asks us to return a list of values(*integers*) in which each value i
 ```
 Output: [151,159,262,373,404,484,515,595,626,737,840,848,951,959]
 ```
-- Notice that some number of *two consecutive digits* has the same first digit but different second digit. Numbers such as:
+- Notice that some number has *consecutive digits* that has the same first digit but different second digit. Numbers such as:
     - `[151,159]`
     - `[404,484]`
     - `[840,848]`
@@ -62,9 +62,13 @@ Output: [151,159,262,373,404,484,515,595,626,737,840,848,951,959]
     - `(5, 1)` and `(5, 9)`
     - `(4, 0)` and `(4, 8)`
 
-- To find whether the first digit can be paired to `2` different second digits, it must satisfy these conditions(*if it only satisfies one then it only has 1 pair*):
+- To find whether the first digit can be paired to `2` different second digits, it must satisfy these conditions:
     1. `k > 0` and `x - k >= 0`
     2. `x + k < 10`
+
+```
+NOTE: If it only satisfies one then it only has 1 pair.
+```
 
 ***Example:***
 
