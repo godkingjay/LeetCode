@@ -1,5 +1,11 @@
 # Problem #967 ([Numbers With Same Consecutive Differences](https://leetcode.com/problems/numbers-with-same-consecutive-differences/) | Backtracking, Breadth First Search)
 
+Return all **non-negative** integers of length `n` such that the absolute difference between every two consecutive digits is `k`.
+
+Note that every number in the answer must not have leading zeros. For example, 01 has one leading zero and is invalid.
+
+You may return the answer in any order.
+
 ### Code
 - **Java**
 ```java
@@ -62,3 +68,25 @@ public:
 };
 ```
 ![image](https://user-images.githubusercontent.com/89616705/188256807-018745eb-59e1-4be9-b809-e3347ccd281d.png)
+
+- **Python**
+```python3
+class Solution:
+    def numsSameConsecDiff(self, n: int, k: int) -> List[int]:
+        list = []
+        min = pow(10, n - 1)
+        for i in range (1, 10):
+            q = [i]
+            while len(q):
+                num = q.pop(0)
+                if num >= min:
+                    list.append(num)
+                    continue
+                x = num % 10
+                if k > 0 and x - k >= 0:
+                    q.append(num * 10 + x - k)
+                if x + k < 10:
+                    q.append(num * 10 + x + k)
+        return list
+```
+![image](https://user-images.githubusercontent.com/89616705/188257741-439d2469-cdf0-4e62-ad89-8f86642cfac6.png)
