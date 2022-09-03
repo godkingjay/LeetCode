@@ -47,13 +47,19 @@ Problem asks us to return a list of values(*integers*) in which the **absolute d
 **Sample** <br/>
 
     n = 3, k = 4
-- This means that a the values of the list should have a length of `3` and each *two consecutive digits* has an **absolute difference** of `4`.
+- This means that the numbers in the list should have a length of `3` and each *two consecutive digits* of a number has an **absolute difference** of `4`.
 <br/>
 
     Output: [151,159,262,373,404,484,515,595,626,737,840,848,951,959]
-- Notice that some number of *two consecutive digits* has the same first digit but different second digit.
-- Digits such as:
-    - Hello
+- Notice that some number of *two consecutive digits* has the same first digit but different second digit. Numbers such as:
+    - `[151,159]`
+    - `[404,484]`
+    - `[840,848]`
+    - `[951,959]`
+
+- From these numbers we can conclude that two numbers of *two consecutive digits* with same first digit but different second digit can have the same *absolute difference*. Pairs such as(*where `k = 4`*):
+    - `(5, 1)` and `(5, 9)`
+    - `(4, 0)` and `(4, 8)`
 
 ## Breadth First Search(Iterative)
 
