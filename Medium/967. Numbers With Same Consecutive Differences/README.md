@@ -87,7 +87,7 @@ Problem asks us to return a list of values(*integers*) in which the **absolute d
 
 ## Breadth First Search(Iterative)
 
-The basic idea in an *iterative* **BFS** is to create a `List` where we will store the `n` digit numbers. We will use a ***for loop*** to loop from `1 - 9` which corresponds to the beginning of a number(`i`). For each iteration, we will create a `Queue` where we will first store(`i`) then process it inside a ***while loop***. Inside the ***while loop*** we will determine all possible combination of numbers until our number reaches `n` digits. When the number satisfies all condition and rule, add it to te `List`.
+The basic idea in an *iterative* **BFS** is to create a `List` where we will store the `n` digit numbers. We will use a ***for loop*** to loop from `1 - 9` which corresponds to the beginning of a number(`num`). For each iteration, we will create a `Queue` where we will first add(`i`) then process it inside a ***while loop***. Inside the ***while loop*** we will determine all possible combination of numbers until our number reaches `n` digits. When the number satisfies all condition and rule, add it to te `List`.
 
 ***Code Structure***
 ```cpp
@@ -116,7 +116,27 @@ for(int i = 0; i < 10; i++){
     }
 }
 ```
-- for each iteration, we will execute a **while loop** until our `Queue` is empty.
+- for each iteration, we will execute a **while loop** until our `Queue` is empty. Inside the ***while loop***, we will get the first value in our `Queue` and assign it to `num` and remove it from our `Queue`.
+<br/>
+
+```cpp
+for(int i = 0; i < 10; i++){
+    queue<int> q;
+    q.push(i);
+    while (!q.empty()) {
+        int num = q.front();
+        q.pop();
+        if(num >= min){
+            list.push_back(num);
+            continue;
+        }
+        int x = num % 10;
+        if (k > 0 && x - k >= 0)
+            q.push(num * 10 + x - k)
+        if (x + k < 10)
+            q.push(num * 10 + x + k)
+    }
+```
 
 ### Code
 - **Java**
