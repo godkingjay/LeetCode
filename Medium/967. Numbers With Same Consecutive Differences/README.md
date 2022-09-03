@@ -40,7 +40,7 @@ You may return the answer in `any order`.
 
 # Solutions
 
-## Breadth First Search
+## Breadth First Search(Iterative)
 
 ### Code
 - **Java**
