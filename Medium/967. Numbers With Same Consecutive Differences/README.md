@@ -56,9 +56,34 @@ Problem asks us to return a list of values(*integers*) in which the **absolute d
     - `[840,848]`
     - `[951,959]`
 
-- From these numbers we can conclude that two numbers of *two consecutive digits* with same first digit but different second digit can have the same *absolute difference*. Pairs such as(*where `k = 4`*):
+- From these numbers we can conclude that two numbers with same first digit but different second digit can have the same *absolute difference*. Pairs such as(*where `k = 4`*):
     - `(5, 1)` and `(5, 9)`
     - `(4, 0)` and `(4, 8)`
+
+- To find whether the first digit can be paired to `2` different second digits, it must satisfy these conditions(*if it only satisfies one then it only has 1 pair*):
+    1. `k > 0` and `x - k >= 0`
+    2. `x + k < 10`
+
+***Example:***
+
+    k = 4
+    x = 5, this refers to the first digit
+    
+    1. k > 0 and x - k >= 0
+        5 - 4 >= 0, true
+        5 - 4 = 1, a pair
+        
+        | 5 - 1 | = 4, absolute difference = k
+        
+        Therefore, 1 is a pair of 5.
+
+    2. x + k < 10
+        5 + 4 < 10, true
+        5 + 4 = 9, a pair
+        
+        | 5 - 9 | = 4, absolute difference = k
+        
+        Therefore, 9 is a pair of 5.
 
 ## Breadth First Search(Iterative)
 
