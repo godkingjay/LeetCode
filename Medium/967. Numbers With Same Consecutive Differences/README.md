@@ -41,7 +41,7 @@ You may return the answer in `any order`.
 
 ### Basic Idea
 
-Problem asks us to return a list of values(*integers*) in which the **absolute difference** of each *two consecutive digits* is `k` and the length of the number is `n`.
+The problem asks us to return a list of values(*integers*) in which each value is `n` digits and the **absolute difference** of each *two consecutive digits* is `k`.
 
 **Sample** <br/>
 
