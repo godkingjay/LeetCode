@@ -40,6 +40,21 @@ You may return the answer in `any order`.
 
 # Solutions
 
+### Basic Idea
+
+Problem asks us to return a list of values(*integers*) in which the **absolute difference** of each *two consecutive digits* is `k` and the length of the number is `n`.
+
+**Sample** <br/>
+
+    n = 3, k = 4
+- This means that a the values of the list should have a length of `3` and each *two consecutive digits* has an **absolute difference** of `4`.
+<br/>
+
+    Output: [151,159,262,373,404,484,515,595,626,737,840,848,951,959]
+- Notice that some number of *two consecutive digits* has the same first digit but different second digit.
+- Digits such as:
+    - 
+
 ## Breadth First Search(Iterative)
 
 ### Code
