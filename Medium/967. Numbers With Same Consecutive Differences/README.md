@@ -186,7 +186,7 @@ for(int i = 0; i < 10; i++){
 ![image](https://user-images.githubusercontent.com/89616705/188291389-7a250b05-b203-4384-be7b-6d23fa0a01e0.png)
 <br/>
 
-- Final List
+- **Final List**
 ![image](https://user-images.githubusercontent.com/89616705/188291521-5e259f2f-4bc2-416b-9fde-8d2c25312e77.png)
 <br/>
 ```cpp
