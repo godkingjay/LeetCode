@@ -163,44 +163,56 @@ for(int i = 0; i < 10; i++){
 ![image](https://user-images.githubusercontent.com/89616705/188290842-0c0c870e-ecf7-40a7-8b29-971efff780a7.png)
 ***
 <br/>
+
 - `Queue` after getting the next digit of `1`.
 ![image](https://user-images.githubusercontent.com/89616705/188290778-c5e81856-64a3-4633-a099-ff05f95d5119.png)
 ***
 <br/>
+
 - `Queue` is popped, `num = 15`.
 ![image](https://user-images.githubusercontent.com/89616705/188290797-fc6b999a-440a-4c9d-82a0-0729cb2f4cef.png)
 ***
 <br/>
+
 - `num` is less than `min` thus find its next digit.
 - There are two digits that can be paired with the last digit of `num`. Add the resulting numbers to the `Queue`.
 ![image](https://user-images.githubusercontent.com/89616705/188291019-02b8e6ec-a3c9-4ea5-802d-6a2c05e2669f.png)
 ***
 <br/>
+
 - `Queue` has two values.
 ![image](https://user-images.githubusercontent.com/89616705/188290952-428da4ae-5d85-43c2-9d62-beb4cfcaaef0.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291001-ccc4abdd-ca20-4efe-874b-eeaf7ce9afdb.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291056-8ef040f9-19f3-4dad-b466-70bcec178080.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291098-6a91f9eb-c4a3-4913-8be5-79142901801a.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291106-c24c4b6f-757e-40ab-bb0b-c00aaf958d0c.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291346-0337b25b-66f7-42eb-951d-8eede6e3a230.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291356-e35e8376-bfbf-4fe1-b68b-022c6e914557.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291364-a40b1826-4870-43ec-b92d-30017e7e997b.png)
 ***
 <br/>
+
 ![image](https://user-images.githubusercontent.com/89616705/188291389-7a250b05-b203-4384-be7b-6d23fa0a01e0.png)
 ***
 <br/>
