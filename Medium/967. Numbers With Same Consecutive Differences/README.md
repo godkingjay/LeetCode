@@ -112,7 +112,7 @@ for(int i = 0; i < 10; i++){
 - We will iterate from `1 - 9`, these numbers are assigned to `i` which corresponds to the beginning of our number. We will then create a `Queue` where we will store the numbers, where for each number, we will determine the next digit where the ***absolute difference*** of the next digit and preceded digit is `k`. By default, the `Queue` first contains the first digit of our number which is `i`.
 
 ![image](https://user-images.githubusercontent.com/89616705/188290251-3d6b405e-d0de-49c0-aa61-0b0f8b19bd35.png)
-
+***
 <br/>
 
 ```cpp
@@ -128,6 +128,7 @@ for(int i = 0; i < 10; i++){
 - for each iteration, we will execute a **while loop** until our `Queue` is empty. Inside the ***while loop***, we will get the first value in our `Queue` and assign it to `num` and remove it from our `Queue`.
 
 ![image](https://user-images.githubusercontent.com/89616705/188290260-959a5fca-0fb7-4d1e-bcc0-b60f481e5823.png)
+***
 <br/>
 
 ```cpp
@@ -160,30 +161,31 @@ for(int i = 0; i < 10; i++){
 - Once the new `num` is added to our `Queue`, our ***while loop*** still hold thus continue executing its statements for each values in the `Queue` until all values are greater than `min`, which will then satisfy the if condition where we will add the values to our list and ***empty*** our `Queue`. Once the `Queue` is empty, exit the ***while loop*** and increment `i` thus beginning another iteration for a number starting at `2`, repeat loop until `i = 9`.
 
 ![image](https://user-images.githubusercontent.com/89616705/188290842-0c0c870e-ecf7-40a7-8b29-971efff780a7.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188290778-c5e81856-64a3-4633-a099-ff05f95d5119.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188290797-fc6b999a-440a-4c9d-82a0-0729cb2f4cef.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291019-02b8e6ec-a3c9-4ea5-802d-6a2c05e2669f.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188290952-428da4ae-5d85-43c2-9d62-beb4cfcaaef0.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291001-ccc4abdd-ca20-4efe-874b-eeaf7ce9afdb.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291056-8ef040f9-19f3-4dad-b466-70bcec178080.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291098-6a91f9eb-c4a3-4913-8be5-79142901801a.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291106-c24c4b6f-757e-40ab-bb0b-c00aaf958d0c.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291346-0337b25b-66f7-42eb-951d-8eede6e3a230.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291356-e35e8376-bfbf-4fe1-b68b-022c6e914557.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291364-a40b1826-4870-43ec-b92d-30017e7e997b.png)
-
+***
 ![image](https://user-images.githubusercontent.com/89616705/188291389-7a250b05-b203-4384-be7b-6d23fa0a01e0.png)
+***
 <br/>
 
 - **Final List**
