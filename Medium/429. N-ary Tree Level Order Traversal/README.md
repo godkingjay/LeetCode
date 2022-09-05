@@ -5,7 +5,7 @@ Given an n-ary tree, return the *level order* traversal of its nodes' values.
 
 *Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).*
 
-## Example 2
+## Example 1
 ![image](https://user-images.githubusercontent.com/89616705/188394865-29b3d863-18af-4c71-8a88-b275708f75f0.png)
 
 **Input:**
@@ -16,6 +16,18 @@ Given an n-ary tree, return the *level order* traversal of its nodes' values.
 **Output:**
 
     [[1],[3,2,4],[5,6]]
+
+## Example 2
+![image](https://user-images.githubusercontent.com/89616705/188396638-081590a1-f35f-423b-b0c8-58bbbd9dfd41.png)
+
+**Input:**
+
+    root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+<br/>
+
+**Output:**
+
+    [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
 
 ### Codes
 - **Java**
