@@ -65,6 +65,7 @@ public:
 <br/>
 
 - **Python3**
+``` python3
 class Solution:
     def levelOrder(self, root: 'Node') -> List[List[int]]:
         if not root:
@@ -80,6 +81,7 @@ class Solution:
                     q.append(node)
             res.append(level)
         return res;
+```
 ![image](https://user-images.githubusercontent.com/89616705/188390906-1eadee98-9ee8-47b5-b49d-65c4aab49e58.png)
 
 ### Complexity
