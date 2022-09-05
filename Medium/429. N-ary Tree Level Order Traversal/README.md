@@ -29,6 +29,10 @@ Given an n-ary tree, return the *level order* traversal of its nodes' values.
 
     [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
 
+## Constraints
+- The height of the n-ary tree is less than or equal to 1000
+- The total number of nodes is between [0, 10<sup>4</sup>]
+
 ### Codes
 - **Java**
 ```java
