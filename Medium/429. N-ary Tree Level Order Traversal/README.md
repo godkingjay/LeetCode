@@ -9,10 +9,33 @@ Given an n-ary tree, return the *level order* traversal of its nodes' values.
 
 ### Codes
 - **Java**
+```java
+class Solution {
+    public List<List<Integer>> levelOrder(Node root) {
+        if(root == null) return new ArrayList<List<Integer>>();
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+        while(!q.isEmpty()){
+            List<Integer> level = new ArrayList<Integer>();
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                Node curr = q.poll(); 
+                level.add(curr.val);
+                for(Node node: curr.children){
+                    q.add(node);
+                }
+            }
+            res.add(level);
+        }
+        return res;
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/89616705/188382963-319ff10a-4c49-4744-bd8a-5af21c2cf2f3.png)
 <br/>
 
 - **C++**
-![image](https://user-images.githubusercontent.com/89616705/188382716-e65a2423-7f28-4cd0-a2c7-c5305b0bfaf6.png)
 <br/>
 
 - **Python3**
