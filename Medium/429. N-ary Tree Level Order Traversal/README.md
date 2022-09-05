@@ -117,7 +117,7 @@ class Solution:
 ![image](https://user-images.githubusercontent.com/89616705/188390906-1eadee98-9ee8-47b5-b49d-65c4aab49e58.png)
 
 ### Complexity
-- **Time:** `O(n)`
+- **Time:** `O(n^2)`, all nodes are traversed twice.
 - **Space:** `O(n)`
 
 ## Breadth-First Search(Iterative) - HashMap and Queue
@@ -163,3 +163,7 @@ class Solution {
 }
 ```
 ![image](https://user-images.githubusercontent.com/89616705/188400145-82d862dd-e5aa-4bcd-89a1-20acde86fbaf.png)
+
+### Complexity
+- **Time:** `O(n^2)`, all nodes are traversed twice.
+- **Space:** `O(n)`
