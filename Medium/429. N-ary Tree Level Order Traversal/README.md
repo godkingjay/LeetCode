@@ -64,6 +64,21 @@ public:
 <br/>
 
 - **Python3**
+class Solution:
+    def levelOrder(self, root: 'Node') -> List[List[int]]:
+        if not root:
+            return []
+        res = []
+        q = [root]
+        while len(q):
+            level = []
+            for i in range (len(q)):
+                curr = q.pop(0)
+                level.append(curr.val)
+                for node in curr.children:
+                    q.append(node)
+            res.append(level)
+        return res;
 
 ### Complexity
 - **Time:** ``
