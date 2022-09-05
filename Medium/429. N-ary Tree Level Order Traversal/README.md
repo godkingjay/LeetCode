@@ -61,6 +61,7 @@ public:
     }
 };
 ```
+![image](https://user-images.githubusercontent.com/89616705/188386462-05581f88-9631-4da8-8dbe-f03734e6f66b.png)
 <br/>
 
 - **Python3**
@@ -79,6 +80,7 @@ class Solution:
                     q.append(node)
             res.append(level)
         return res;
+![image](https://user-images.githubusercontent.com/89616705/188390906-1eadee98-9ee8-47b5-b49d-65c4aab49e58.png)
 
 ### Complexity
 - **Time:** ``
