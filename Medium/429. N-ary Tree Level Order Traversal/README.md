@@ -111,5 +111,5 @@ class Solution:
 ![image](https://user-images.githubusercontent.com/89616705/188390906-1eadee98-9ee8-47b5-b49d-65c4aab49e58.png)
 
 ### Complexity
-- **Time:** ``
-- **Space:** ``
+- **Time:** `O(n)`
+- **Space:** `O(n)`
