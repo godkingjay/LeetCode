@@ -35,9 +35,11 @@ Given an n-ary tree, return the *level order* traversal of its nodes' values.
 
 # Solutions
 
-## Breadth-First Search(Iterative)
+## Breadth-First Search(Iterative) - Queue
 
-### Codes
+
+
+### Code
 - **Java**
 ```java
 class Solution {
@@ -118,4 +120,46 @@ class Solution:
 - **Time:** `O(n)`
 - **Space:** `O(n)`
 
-## 
+## Breadth-First Search(Iterative) - HashMap and Queue
+
+### Code
+
+- **Java**
+```java
+class Solution {
+    public List<List<Integer>> levelOrder(Node root) {
+        if(root == null) return new ArrayList<List<Integer>>();
+        Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
+        Queue<Node> q = new LinkedList<Node>();
+        q.add(root);
+        int r = 0;
+        map.put(r, new ArrayList<Integer>());
+        map.get(r++).add(root.val);
+        int minNode = 1;
+        int maxNode = 1 + root.children.size();
+        int nodeCount = maxNode;
+        while(!q.isEmpty()){
+            Node curr = q.poll();
+            int n = curr.children.size();
+            if(!map.containsKey(r))
+                map.put(r, new ArrayList<Integer>());
+            for(Node node: curr.children){
+                map.get(r).add(node.val);
+                maxNode += node.children.size();
+                q.add(node);
+                minNode++;
+            }
+            if(minNode == nodeCount && n != 0){
+                nodeCount = maxNode;
+                r++;
+            }
+        }
+        List<List<Integer>> lists = new ArrayList<List<Integer>>();
+        for(int i = 0; i < r; i++){
+            lists.add(map.get(i));
+        }
+        return lists;
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/89616705/188400145-82d862dd-e5aa-4bcd-89a1-20acde86fbaf.png)
