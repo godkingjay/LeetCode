@@ -36,6 +36,31 @@ class Solution {
 <br/>
 
 - **C++**
+```cpp
+class Solution {
+public:
+    vector<vector<int>> levelOrder(Node* root) {
+        if(!root) return vector<vector<int>>();
+        vector<vector<int>> res;
+        queue<Node*> q;
+        q.push(root);
+        while(!q.empty()){
+            vector<int> level;
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                Node* curr = q.front();
+                q.pop();
+                level.push_back(curr->val);
+                for(Node* node: curr->children){
+                    q.push(node);
+                }
+            }
+            res.push_back(level);
+        }
+        return res;
+    }
+};
+```
 <br/>
 
 - **Python3**
