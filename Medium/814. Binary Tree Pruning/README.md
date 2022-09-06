@@ -4,6 +4,24 @@ Given the `root` of a binary tree, return *the same tree where every subtree (of
 
 A subtree of a node `node` is `node` plus every node that is a descendant of `node`.
 
+## Example 1
+![image](https://user-images.githubusercontent.com/89616705/188563260-2162595d-91c1-4582-a9ad-bf8693ba0b61.png)
+
+**Input:**
+
+    root = [1,null,0,0,1]
+<br/>
+
+**Output:**
+
+    [1,null,0,null,1]
+<br/>
+
+**Explanation:**
+
+    Only the red nodes satisfy the property "every subtree not containing a 1".
+    The diagram on the right represents the answer.
+
 # Solutions
 
 ## 1. Depth-First Search (Recursive)
