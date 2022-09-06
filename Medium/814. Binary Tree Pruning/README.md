@@ -46,6 +46,10 @@ A subtree of a node `node` is `node` plus every node that is a descendant of `no
 
     [1,1,0,1,1,null,1]
 
+## Constraints
+- The number of nodes in the tree is in the range `[1, 200]`.
+- `Node.val` is either `0` or `1`.
+
 # Solutions
 
 ## 1. Depth-First Search (Recursive)
