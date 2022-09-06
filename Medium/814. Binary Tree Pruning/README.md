@@ -43,8 +43,15 @@ public:
 
 - **Python**
 ```python
-
+class Solution(object):
+    def pruneTree(self, root):
+        if not root: return None
+        root.left = self.pruneTree(root.left)
+        root.right = self.pruneTree(root.right)
+        if not root.left and not root.right and root.val == 0: return None
+        return root
 ```
+![image](https://user-images.githubusercontent.com/89616705/188563159-629b3d24-4242-4b49-aeb5-7e5ea888e88e.png)
 
 ### Complexity
 - **Time:** `O(log n)`
