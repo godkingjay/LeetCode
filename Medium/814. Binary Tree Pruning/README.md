@@ -22,6 +22,18 @@ A subtree of a node `node` is `node` plus every node that is a descendant of `no
     Only the red nodes satisfy the property "every subtree not containing a 1".
     The diagram on the right represents the answer.
 
+## Example 2
+![image](https://user-images.githubusercontent.com/89616705/188563471-0539814a-78df-4693-b7b9-e4f0ae6049f0.png)
+
+**Input:**
+
+    root = [1,0,1,0,0,0,1]
+<br/>
+
+**Output:**
+
+    [1,null,1,null,1]
+
 # Solutions
 
 ## 1. Depth-First Search (Recursive)
