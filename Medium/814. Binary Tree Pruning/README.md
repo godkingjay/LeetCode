@@ -34,6 +34,18 @@ A subtree of a node `node` is `node` plus every node that is a descendant of `no
 
     [1,null,1,null,1]
 
+## Example 3
+![image](https://user-images.githubusercontent.com/89616705/188563687-b6019a73-1b7f-4d9f-b301-f92480da569e.png)
+
+**Input:**
+
+    root = [1,1,0,1,1,0,1,0]
+<br/>
+
+**Output:**
+
+    [1,1,0,1,1,null,1]
+
 # Solutions
 
 ## 1. Depth-First Search (Recursive)
