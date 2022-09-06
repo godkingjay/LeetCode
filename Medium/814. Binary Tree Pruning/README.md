@@ -6,7 +6,7 @@ A subtree of a node `node` is `node` plus every node that is a descendant of `no
 
 # Solutions
 
-## Depth-First Search (Recursive)
+## 1. Depth-First Search (Recursive)
 
 ### Codes
 
