@@ -25,6 +25,27 @@ class Solution {
 ![image](https://user-images.githubusercontent.com/89616705/188560772-96ad0936-d406-4489-a978-ee85a449757a.png)
 <br/>
 
+- **C++*
+```cpp
+class Solution {
+public:
+    TreeNode* pruneTree(TreeNode* root) {
+        if(!root) return NULL;
+        root->left = pruneTree(root->left);
+        root->right = pruneTree(root->right);
+        if(!root->left && !root->right && root->val == 0) return NULL;
+        return root;
+    }
+};
+```
+![image](https://user-images.githubusercontent.com/89616705/188562216-e8876062-e363-440b-8b7d-6671284bffc7.png)
+<br/>
+
+- **Python**
+```python
+
+```
+
 ### Complexity
 - **Time:** `O(log n)`
 - **Space:** `O(1)`
