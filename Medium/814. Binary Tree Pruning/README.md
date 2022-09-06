@@ -24,3 +24,7 @@ class Solution {
 ```
 ![image](https://user-images.githubusercontent.com/89616705/188560772-96ad0936-d406-4489-a978-ee85a449757a.png)
 <br/>
+
+### Complexity
+- **Time:** `O(log n)`
+- **Space:** `O(1)`
