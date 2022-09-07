@@ -38,3 +38,30 @@ Omit all the empty parenthesis pairs that do not affect the one-to-one mapping r
 ## Constraints:
 - The number of nodes in the tree is in the range `[1, 104]`.
 - `-1000 <= Node.val <= 1000`
+
+# Solutions
+
+## Breadth-First Search(Recursive)
+
+### Code
+
+- **Java**
+```java
+class Solution {
+    public String tree2str(TreeNode root) {
+        if(root == null) return "";
+        String s = String.valueOf(root.val);
+        String left = tree2str(root.left);
+        String right = tree2str(root.right);
+        if(left == "" && right == "") return s;
+        if(right == "") return s + "(" + left + ")";
+        if(left == "") return s + "()" + "(" + right + ")";
+        return s + "(" + left + ")" + "(" + right + ")";
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/89616705/188801332-28829bae-e3f3-42e3-8d90-aac2696abad3.png)
+
+### Complexity
+- **Time** `O(log n)`
+- **Space** `O(1)`
