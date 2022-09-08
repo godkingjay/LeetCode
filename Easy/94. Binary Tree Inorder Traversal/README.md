@@ -13,3 +13,12 @@ Given the `root` of a binary tree, return the *inorder traversal of its nodes' v
 
     [1,3,2]
 
+## Example 2
+
+### Input:
+
+    root = []
+
+### Output:
+
+    []
