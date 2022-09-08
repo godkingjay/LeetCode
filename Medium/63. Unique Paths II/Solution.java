@@ -1,5 +1,6 @@
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        if(obstacleGrid[0][0] == 1) return 0;
         int endRow = obstacleGrid.length;
         int endCol = obstacleGrid[0].length;
         int[][] grid = new int[endRow][endCol];
