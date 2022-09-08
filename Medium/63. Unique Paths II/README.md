@@ -43,6 +43,10 @@ The testcases are generated so that the answer will be less than or equal to `2 
 - `1 <= m, n <= 100`
 - `obstacleGrid[i][j] is 0 or 1.`
 
+# Solutions
+
+## Dynamic Programming
+
 ### Code
 
 - **Java**
@@ -81,3 +85,7 @@ class Solution {
 }
 ```
 ![image](https://user-images.githubusercontent.com/89616705/189095854-50a15486-4beb-4cfa-a7aa-18285bacb1d7.png)
+
+### Complexity
+- **Time:** `O(m * n)`
+- **Space:** `O(1)`
