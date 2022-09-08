@@ -93,3 +93,20 @@ public:
 ```
 ![image](https://user-images.githubusercontent.com/89616705/189011321-319cdcb7-febb-4352-8ed1-c9d27b603797.png)
 
+- **Python**
+```python
+class Solution(object):
+    def inorderTraversal(self, root):
+        list = []
+        stack = []
+        curr = root
+        while curr or len(stack):
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            curr = stack.pop()
+            list.append(curr.val)
+            curr = curr.right
+        return list
+```
+![image](https://user-images.githubusercontent.com/89616705/189012384-bb613e6a-f008-4009-bf7a-cb6601312a41.png)
