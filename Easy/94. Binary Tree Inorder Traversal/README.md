@@ -42,3 +42,29 @@ Given the `root` of a binary tree, return the *inorder traversal of its nodes' v
 ### Follow up: `Recursive solution is trivial, could you do it iteratively?`
 
 # Solutions
+
+## Stack(Iterative)
+
+### Code
+
+- **Java**
+```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        List<Integer> list = new ArrayList<Integer>();
+        TreeNode curr = root;
+        while(curr != null | !stack.isEmpty()){
+            while(curr != null){
+                stack.add(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            list.add(curr.val);
+            curr = curr.right;
+        }
+        return list;
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/89616705/189010656-39103022-6da8-4711-922d-11cae7fa52b2.png)
