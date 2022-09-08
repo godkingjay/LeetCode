@@ -8,6 +8,24 @@ An obstacle and space are marked as `1` or `0` respectively in `grid`. A path th
 
 The testcases are generated so that the answer will be less than or equal to `2 * 10⁹`.
 
+## Example 1
+![image](https://user-images.githubusercontent.com/89616705/189096558-259028ca-28fa-411a-a674-04265f54a76c.png)
+
+### Input:
+
+    obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
+
+### Output:
+
+    2
+
+### Explanation:
+
+    There is one obstacle in the middle of the 3x3 grid above.
+    There are two ways to reach the bottom-right corner:
+    1. Right -> Right -> Down -> Down
+    2. Down -> Down -> Right -> Right
+
 ### Code
 
 - **Java**
