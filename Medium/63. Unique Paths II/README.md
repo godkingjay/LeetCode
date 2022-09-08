@@ -37,6 +37,12 @@ The testcases are generated so that the answer will be less than or equal to `2 
 
     1
 
+## Constraints
+- `m == obstacleGrid.length`
+- `n == obstacleGrid[i].length`
+- `1 <= m, n <= 100`
+- `obstacleGrid[i][j] is 0 or 1.`
+
 ### Code
 
 - **Java**
