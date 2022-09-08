@@ -110,3 +110,7 @@ class Solution(object):
         return list
 ```
 ![image](https://user-images.githubusercontent.com/89616705/189012384-bb613e6a-f008-4009-bf7a-cb6601312a41.png)
+
+### Complexity
+- **Time:** `O(n)`
+- **Space:** `O(n)`
