@@ -26,6 +26,17 @@ The testcases are generated so that the answer will be less than or equal to `2 
     1. Right -> Right -> Down -> Down
     2. Down -> Down -> Right -> Right
 
+## Example 2
+![image](https://user-images.githubusercontent.com/89616705/189096825-12d9c172-889d-440d-a04f-da0a232b1fcc.png)
+
+### Input:
+
+    obstacleGrid = [[0,1],[0,0]]
+
+### Output:
+
+    1
+
 ### Code
 
 - **Java**
