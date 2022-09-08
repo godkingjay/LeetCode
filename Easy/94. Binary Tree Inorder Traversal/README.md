@@ -68,3 +68,27 @@ class Solution {
 }
 ```
 ![image](https://user-images.githubusercontent.com/89616705/189010656-39103022-6da8-4711-922d-11cae7fa52b2.png)
+
+- **C++**
+```cpp
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        stack<TreeNode*> stack;
+        vector<int> list;
+        TreeNode* curr = root;
+        while(curr != NULL || !stack.empty()){
+            while(curr != NULL){
+                stack.push(curr);
+                curr = curr->left;
+            }
+            curr = stack.top();
+            stack.pop();
+            list.push_back(curr->val);
+            curr = curr->right;
+        }
+        return list;
+    }
+};
+```
+![image](https://user-images.githubusercontent.com/89616705/189011321-319cdcb7-febb-4352-8ed1-c9d27b603797.png)
