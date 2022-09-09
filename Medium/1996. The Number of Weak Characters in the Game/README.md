@@ -65,12 +65,12 @@ class Solution {
     public int numberOfWeakCharacters(int[][] properties) {
         int n = properties.length;
         int count = 0;
-        int max = Integer.MIN_VALUE;
+        int maxN = Integer.MIN_VALUE;
         Arrays.sort(properties, (a, b) -> a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]);
         for(int i = 0; i < n; i++){
-            if(properties[i][1] < max)
+            if(properties[i][1] < maxN)
                 count++;
-            max = Math.max(max, properties[i][1]);
+            maxN = Math.max(maxN, properties[i][1]);
         }
         return count;
     }
@@ -92,8 +92,8 @@ public:
     int numberOfWeakCharacters(vector<vector<int>>& properties) {
         int n = properties.size();
         int count = 0;
-        sort(properties.begin(), properties.end(), compare);
         int maxN = INT_MIN;
+        sort(properties.begin(), properties.end(), compare);
         for(int i = 0; i < n; i++){
             if(properties[i][1] < maxN)
                 count++;
@@ -110,8 +110,8 @@ public:
 ```python
 class Solution(object):
     def numberOfWeakCharacters(self, properties):
-        maxN = 0
         count = 0
+        maxN = ~sys.maxint
         properties.sort(key=lambda x: (-x[0], x[1]))
         for i in range(len(properties)):
             if(properties[i][1] < maxN):
