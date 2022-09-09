@@ -119,7 +119,7 @@ class Solution(object):
             maxN = max(maxN, properties[i][1])
         return count
 ```
-![image](https://user-images.githubusercontent.com/89616705/189260207-6bb150bb-bfe5-44b3-ae4a-59035ea83e1e.png)
+![image](https://user-images.githubusercontent.com/89616705/189260393-e9f340fe-7958-4585-917b-cba87894c128.png)
 
 ### Complexity
 - **Time:** `O(n log n)`
