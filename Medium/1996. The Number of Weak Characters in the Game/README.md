@@ -5,3 +5,39 @@ You are playing a game that contains multiple characters, and each of the charac
 A character is said to be **weak** if any other character has **both** attack and defense levels **strictly greater** than this character's attack and defense levels. More formally, a character `i` is said to be **weak** if there exists another character `j` where `attackⱼ > attackᵢ` and `defenseⱼ > defenseᵢ`.
 
 *Return the number of **weak** characters.*
+
+# Solutions
+
+## Sorting
+
+### Codes
+
+- **Java**
+<br/>
+
+- **C++**
+```cpp
+class Solution {
+public:
+    static bool comp(vector<int>& a, vector<int>& b){
+        if(a[0] == b[0])
+            return a[1] < b[1];
+        return a[0] > b[0];
+    }
+    
+    int numberOfWeakCharacters(vector<vector<int>>& properties) {
+        int n = properties.size();
+        int count = 0;
+        sort(properties.begin(), properties.end(), comp);
+        int maxN = INT_MIN;
+        for(int i = 0; i < n; i++){
+            if(properties[i][1] < maxN)
+                count++;
+            maxN = max(maxN, properties[i][1]);
+        }
+        return count;
+    }
+};
+```
+![image](https://user-images.githubusercontent.com/89616705/189256594-878bbd1c-cee3-4386-ae0d-7ab9a206d4a4.png)
+<br/>
