@@ -83,7 +83,7 @@ class Solution {
 ```cpp
 class Solution {
 public:
-    static bool comp(vector<int>& a, vector<int>& b){
+    static bool compare(vector<int>& a, vector<int>& b){
         if(a[0] == b[0])
             return a[1] < b[1];
         return a[0] > b[0];
@@ -92,7 +92,7 @@ public:
     int numberOfWeakCharacters(vector<vector<int>>& properties) {
         int n = properties.size();
         int count = 0;
-        sort(properties.begin(), properties.end(), comp);
+        sort(properties.begin(), properties.end(), compare);
         int maxN = INT_MIN;
         for(int i = 0; i < n; i++){
             if(properties[i][1] < maxN)
@@ -105,6 +105,21 @@ public:
 ```
 ![image](https://user-images.githubusercontent.com/89616705/189256594-878bbd1c-cee3-4386-ae0d-7ab9a206d4a4.png)
 <br/>
+
+- **Python**
+```python
+class Solution(object):
+    def numberOfWeakCharacters(self, properties):
+        maxN = 0
+        count = 0
+        properties.sort(key=lambda x: (-x[0], x[1]))
+        for i in range(len(properties)):
+            if(properties[i][1] < maxN):
+                count+=1
+            maxN = max(maxN, properties[i][1])
+        return count
+```
+![image](https://user-images.githubusercontent.com/89616705/189260207-6bb150bb-bfe5-44b3-ae4a-59035ea83e1e.png)
 
 ### Complexity
 - **Time:** `O(n log n)`
