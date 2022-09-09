@@ -60,6 +60,23 @@ A character is said to be **weak** if any other character has **both** attack an
 ### Codes
 
 - **Java**
+```java
+class Solution {
+    public int numberOfWeakCharacters(int[][] properties) {
+        int n = properties.length;
+        int count = 0;
+        int max = Integer.MIN_VALUE;
+        Arrays.sort(properties, (a, b) -> a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]);
+        for(int i = 0; i < n; i++){
+            if(properties[i][1] < max)
+                count++;
+            max = Math.max(max, properties[i][1]);
+        }
+        return count;
+    }
+}
+```
+![image](https://user-images.githubusercontent.com/89616705/189258325-5cbea14a-3d25-48fc-838a-b4253c703082.png)
 <br/>
 
 - **C++**
