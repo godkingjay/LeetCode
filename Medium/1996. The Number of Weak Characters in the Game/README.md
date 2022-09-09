@@ -48,6 +48,11 @@ A character is said to be **weak** if any other character has **both** attack an
 
     The third character is weak because the second character has a strictly greater attack and defense.
 
+## Constraints
+- `2 <= properties.length <= 105`
+- `properties[i].length == 2`
+- `1 <= attacki, defensei <= 105`
+
 # Solutions
 
 ## Sorting
