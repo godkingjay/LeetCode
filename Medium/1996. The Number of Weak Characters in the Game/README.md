@@ -6,6 +6,20 @@ A character is said to be **weak** if any other character has **both** attack an
 
 *Return the number of **weak** characters.*
 
+## Example 1
+
+### Input: 
+
+    properties = [[5,5],[6,3],[3,6]]
+
+### Output: 
+
+    0
+
+### Explanation: 
+
+    No character has strictly greater attack and defense than the other.
+
 # Solutions
 
 ## Sorting
