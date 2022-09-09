@@ -34,6 +34,20 @@ A character is said to be **weak** if any other character has **both** attack an
 
     The first character is weak because the second character has a strictly greater attack and defense.
 
+## Example 3
+
+### Input:
+
+    properties = [[1,5],[10,4],[4,3]]
+
+### Output:
+
+    1
+
+### Explanation:
+
+    The third character is weak because the second character has a strictly greater attack and defense.
+
 # Solutions
 
 ## Sorting
