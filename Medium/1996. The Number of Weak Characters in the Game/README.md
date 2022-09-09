@@ -20,6 +20,20 @@ A character is said to be **weak** if any other character has **both** attack an
 
     No character has strictly greater attack and defense than the other.
 
+## Example 2
+
+### Input:
+
+    properties = [[2,2],[3,3]]
+
+### Output:
+
+    1
+
+### Explanation:
+
+    The first character is weak because the second character has a strictly greater attack and defense.
+
 # Solutions
 
 ## Sorting
