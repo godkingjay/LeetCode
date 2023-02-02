@@ -145,7 +145,7 @@ class Solution:
 
 <br/>
 
-- **Ruby**++
+- **Ruby**
 ```rb
 def is_palindrome(x)
   return false if x < 0
