@@ -82,8 +82,10 @@ public:
 - **Time:** `O(n)`
 - **Space:** `O(n)`
 
-**Ruby**
+<br/>
 
+- **Ruby**++
+```rb
 def two_sum(nums, target)
     hash = {}
     nums.each_with_index do |num, idx|
@@ -92,3 +94,5 @@ def two_sum(nums, target)
         hash[num] = idx
     end
 end
+```
+
