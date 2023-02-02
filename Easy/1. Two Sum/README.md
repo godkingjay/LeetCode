@@ -84,7 +84,7 @@ public:
 
 <br/>
 
-- **Ruby**++
+- **Ruby**
 ```rb
 def two_sum(nums, target)
     hash = {}
