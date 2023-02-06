@@ -81,3 +81,103 @@ public:
 ### **Complexity**
 - **Time:** `O(n)`
 - **Space:** `O(n)`
+
+<br/>
+
+- **Ruby**
+```rb
+def two_sum(nums, target)
+    hash = {}
+    nums.each_with_index do |num, idx|
+        complement = target - num
+        return [hash[complement], idx] if hash.key?(complement)
+        hash[num] = idx
+    end
+end
+```
+
+<br/>
+
+- **Phyton**
+```py
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d = {}
+        for i, num in enumerate(nums):
+            if target - num in d:
+                return [d[target - num], i]
+            d[num] = i
+        return []
+
+```
+
+<br/>
+
+- **PHP**
+```php
+class Solution {
+
+    /**
+     * @param Integer[] $nums
+     * @param Integer $target
+     * @return Integer[]
+     */
+    function twoSum($nums, $target) {
+    $map = [];
+    for ($i = 0; $i < count($nums); $i++) {
+        $complement = $target - $nums[$i];
+        if (isset($map[$complement])) {
+            return [$map[$complement], $i];
+        }
+        $map[$nums[$i]] = $i;
+    }
+}
+
+}
+
+```
+
+<br/>
+
+- **JavaScript**
+```js
+const twoSum = function (nums, target)
+{
+    //search of all Array
+    for (let i = 0; i < nums.length; i++)
+    {
+        for (let j = i + 1; j < nums.length; j++)
+        {
+            // if (nums[j] === target - nums[i])
+            if(nums[i] + nums[j] === target)
+            {
+                return [i, j];
+            }
+        }
+    }
+    };
+
+
+```
+
+<br/>
+
+- **C#**
+```cs
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+    Dictionary<int, int> map = new Dictionary<int, int>();
+    for (int i = 0; i < nums.Length; i++) {
+        int complement = target - nums[i];
+        if (map.ContainsKey(complement)) {
+            return new int[] { map[complement], i };
+        }
+        map[nums[i]] = i;
+    }
+    throw new Exception("No two sum solution");
+}
+
+}
+
+
+```
