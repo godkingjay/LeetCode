@@ -114,3 +114,34 @@ class Solution(object):
 ### Complexity
 - **Time:** `O(n)`
 - **Space:** `O(n)`
+
+
+![image](https://user-images.githubusercontent.com/89616705/189011321-319cdcb7-febb-4352-8ed1-c9d27b603797.png)
+
+- **Ruby**
+```rb
+class TreeNode
+    attr_accessor :val, :left, :right
+    def initialize(val = 0, left = nil, right = nil)
+        @val = val
+        @left = left
+        @right = right
+    end
+end
+
+def inorder_traversal(root)
+    result = []
+    stack = []
+    current = root
+    while current || stack.length > 0
+        while current
+            stack.push(current)
+            current = current.left
+        end
+        current = stack.pop()
+        result << current.val
+        current = current.right
+    end
+    result
+end
+```
