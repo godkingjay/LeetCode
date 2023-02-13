@@ -22,7 +22,7 @@ Given two non-negative integers `low` and `high`. Return the count of **odd numb
 
 ### Constraints
 
-- $1$ <= `low` <= `high` $10^9$
+- $1$ <= `low` <= `high` <= $10^9$
 
 ---
 
