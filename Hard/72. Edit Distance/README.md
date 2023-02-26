@@ -1,4 +1,4 @@
-# Problem #72 ([Maximum Depth of Binary Tree](https://leetcode.com/problems/edit-distance/) | Dynamic Programming, String)
+# Problem #72 ([Edit Distance](https://leetcode.com/problems/edit-distance/) | Dynamic Programming, String)
 
 <img src="https://img.shields.io/badge/-Hard-FF4040?style=for-the-badge&logo=LeetCode&logoColor=black" alt="Hard"/>
 
