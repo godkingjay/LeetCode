@@ -1,8 +1,6 @@
 # Problem #72 ([Maximum Depth of Binary Tree](https://leetcode.com/problems/edit-distance/) | Dynamic Programming, String)
 
 <img src="https://img.shields.io/badge/-Hard-FF4040?style=for-the-badge&logo=LeetCode&logoColor=black" alt="Hard"/>
-<br>
-<br>
 
 Given two strings `word1` and `word2`, return _the minimum number of operations required to convert `word1` to `word2`._
 
