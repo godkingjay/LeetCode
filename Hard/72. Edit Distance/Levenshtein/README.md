@@ -4,7 +4,7 @@
 
 The Levenshtein distance between two strings `a` , `b` (of length | `a` | and | `b` | respectively) is given by `lev(a,b)` where
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/70962a722b0b682e398f0ee77d60c714a441c54e" widt="100%" alt="Levenshtein Distance" />
+<img src="./images/levenshtein-distance.png" width="100%" alt="Levenshtein Distance" />
 
 where the `tail` of some string `x` is a string of all but the first character of `x`, and `x[n]` is the `nth` character of the string `x`, counting from `0`.
 
