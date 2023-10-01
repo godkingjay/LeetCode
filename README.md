@@ -1,4 +1,4 @@
-# LeetCode Solutions
+# LeetCode
 
 This repository contains my solutions to LeetCode problems, categorized by difficulty level (Easy, Medium, Hard). Each problem has its own dedicated directory with a `README.md` file providing problem descriptions and explanations, as well as solution files in various programming languages.
 
@@ -19,41 +19,45 @@ For example, to view the solutions for an Easy-level problem, navigate to:
 ## Directory Structure
 
 The repository is organized as follows:
-
+```
 LeetCode/
 ├── Easy/
-│ ├── Problem1/
-│ │ ├── README
-│ │ ├── solution.java
-│ │ ├── solution.cpp
-│ │ └── ...
-│ ├── Problem2/
-│ │ ├── README
-│ │ ├── solution.java
-│ │ ├── solution.cpp
-│ └── ...
+│   ├── Problem1/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   ├── Problem2/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   └── ...
 ├── Medium/
-│ ├── Problem1/
-│ │ ├── README
-│ │ ├── solutionjava
-│ │ ├── solution.cpp
-│ │ └── ...
-│ ├── Problem2/
-│ │ ├── README
-│ │ ├── solution.java
-│ │ ├── solution.cpp
-│ └── ...
+│   ├── Problem1/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   ├── Problem2/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   └── ...
 ├── Hard/
-│ ├── Problem1/
-│ │ ├── README
-│ │ ├── solution.java
-│ │ ├── solution.cpp
-│ │ └── ...
-│ ├── Problem2/
-│ │ ├── README
-│ │ ├── solution.java
-│ │ ├── solution.cpp
-│ └── ...
+│   ├── Problem1/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   ├── Problem2/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   └── ...
+│   └── ...
+```
 
 
 ## Contributing
