@@ -1,6 +1,6 @@
 # LeetCode
 
-This repository contains my solutions to LeetCode problems, categorized by difficulty level (Easy, Medium, Hard). Each problem has its own dedicated directory with a `README.md` file providing problem descriptions and explanations, as well as solution files in various programming languages.
+This repository contains solutions to LeetCode problems, categorized by difficulty level (Easy, Medium, Hard). Each problem has its own dedicated directory with a `README.md` file providing problem descriptions and explanations, as well as solution files in various programming languages.
 
 ## Table of Contents
 
