@@ -6,6 +6,7 @@ This repository contains solutions to LeetCode problems, categorized by difficul
 
 - [Getting Started](#getting-started)
 - [Directory Structure](#directory-structure)
+- [New Solution](#new-solution)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -26,11 +27,19 @@ LeetCode/
 │   │   ├── README
 │   │   ├── solution.java
 │   │   ├── solution.cpp
+│   │   ├── Approach1/
+│   │   │   ├── README
+│   │   │   ├── solution.js
+│   │   │   └── ...
 │   │   └── ...
 │   ├── Problem2/
 │   │   ├── README
 │   │   ├── solution.java
 │   │   ├── solution.cpp
+│   │   ├── Approach1/
+│   │   │   ├── README
+│   │   │   ├── solution.js
+│   │   │   └── ...
 │   │   └── ...
 │   └── ...
 ├── Medium/
@@ -38,6 +47,10 @@ LeetCode/
 │   │   ├── README
 │   │   ├── solution.java
 │   │   ├── solution.cpp
+│   │   ├── Approach 1/
+│   │   │   ├── README
+│   │   │   ├── solution.js
+│   │   │   └── ...
 │   │   └── ...
 │   ├── Problem2/
 │   │   ├── README
@@ -50,6 +63,10 @@ LeetCode/
 │   │   ├── README
 │   │   ├── solution.java
 │   │   ├── solution.cpp
+│   │   ├── Approach1/
+│   │   │   ├── README
+│   │   │   ├── solution.js
+│   │   │   └── ...
 │   │   └── ...
 │   ├── Problem2/
 │   │   ├── README
@@ -59,6 +76,42 @@ LeetCode/
 │   └── ...
 ```
 
+## New Solution
+
+For problems with multiple solution, you can add your solution like this:
+
+```java
+// Solution #1
+class Solution {
+  /*
+   * Code for Solution #1
+   */
+}
+
+
+// Solution #2
+class Solution {
+  /*
+   * Code for Solution #2
+   */
+}
+```
+
+If you want to add a new approach and want to explain your approach you can add your solution by following this directory structure: ([see example](https://github.com/godkingjay/LeetCode/blob/master/Hard/72.%20Edit%20Distance/Levenshtein/README.md))
+
+```
+LeetCode/
+├── [DIFFICULTY]/
+│   ├── [PROBLEM]/
+│   │   ├── README
+│   │   ├── solution.java
+│   │   ├── solution.cpp
+│   │   ├── [MY APPROACH]/
+│   │   │   ├── README
+│   │   │   ├── solution.java
+│   │   │   └── ...
+│   │   └── ...
+```
 
 ## Contributing
 
