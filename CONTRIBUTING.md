@@ -5,7 +5,7 @@ We love your input! We want to make contributing to this project as easy and tra
 - Reporting a bug
 - Discussing the current state of the code
 - Submitting a fix
-- Proposing new features
+- Proposing new solution
 - Becoming a maintainer
 
 ## We Develop with Github
