@@ -1,0 +1,4 @@
+title: LeetCode Solutions
+description: Solutions to LeetCode problems, categorized by difficulty level (Easy, Medium, Hard)
+plugins:
+  - jekyll-remote-theme
