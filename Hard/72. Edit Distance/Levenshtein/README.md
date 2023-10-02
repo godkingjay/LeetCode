@@ -38,7 +38,7 @@ The above figure is the for loop that will be used to find the distance. In this
 
 ### Code
 
-- **[Java]('./Solutions/Solution.java')**
+- **[Java](./Solution.java)**
 
 ```java
 class Solution {
