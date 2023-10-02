@@ -4,22 +4,29 @@ This repository contains solutions to LeetCode problems, categorized by difficul
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Directory Structure](#directory-structure)
-- [New Solution](#new-solution)
-- [Contributing](#contributing)
-- [License](#license)
+- [LeetCode](#leetcode)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Difficulty Level](#difficulty-level)
+  - [Directory Structure](#directory-structure)
+  - [New Solution](#new-solution)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Getting Started
 
 To access the solutions, navigate to the desired difficulty level directory and then to the specific problem directory. Inside each problem directory, you will find a `README.md` file with the problem description and explanations, as well as solution files in various programming languages.
 
-For example, to view the solutions for an Easy-level problem, navigate to:
+### Difficulty Level
 
+- [Easy](Easy/)
+- [Medium](Medium/)
+- [Hard](Hard/)
 
 ## Directory Structure
 
 The repository is organized as follows:
+
 ```
 LeetCode/
 ├── Easy/
