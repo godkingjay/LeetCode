@@ -1,44 +1,27 @@
-import java.util.*;
-public class isValidBST {
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+	class Solution {
+		public boolean isValidBST(TreeNode root) {
+			return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
+		}
 
-  static class Node{
-    int data;
-    Node left;
-    Node right;
-  
-
-  Node(int data){
-    this.data = data;
-  }
-  }
-
-
-
- public static boolean isValid(Node root , Node min , Node max){
-
-      if(root == null){
-        return true;
-      }
-
-      if(min!=null &&root.data <=min.data ){
-        return false;
-      }
-
-      if(max !=null && root.data >=max.data ){
-        return false;
-      }
-      return isValid(root.left,min,max) && isValid(root.right,root,max);
-    }
-
-
-
-
-public static void main(String args[]) {
- if(isValid(null ,null ,null)){
-    System.out.println("Valid");
-  }else{
-    System.out.println("Not Valid");
-
-  }
-}
-}
+		public boolean isValidBST(TreeNode root, long minVal, long maxVal)
+		{
+			if(root==null) return true;
+			if(root.val>=maxVal || root.val<=minVal) return false;
+			return isValidBST(root.left, minVal, root.val) && isValidBST(root.right, root.val, maxVal);
+		} 
+	}
