@@ -4,14 +4,14 @@ This repository contains solutions to LeetCode problems, categorized by difficul
 
 ## Table of Contents
 
-- [LeetCode](#leetcode)
-  - [Table of Contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-    - [Difficulty Level](#difficulty-level)
-  - [Directory Structure](#directory-structure)
-  - [New Solution](#new-solution)
-  - [Contributing](#contributing)
-  - [License](#license)
+-   [LeetCode](#leetcode)
+    -   [Table of Contents](#table-of-contents)
+    -   [Getting Started](#getting-started)
+        -   [Difficulty Level](#difficulty-level)
+    -   [Directory Structure](#directory-structure)
+    -   [New Solution](#new-solution)
+    -   [Contributing](#contributing)
+    -   [License](#license)
 
 ## Getting Started
 
@@ -19,9 +19,9 @@ To access the solutions, navigate to the desired difficulty level directory and 
 
 ### Difficulty Level
 
-- [Easy](Easy/)
-- [Medium](Medium/)
-- [Hard](Hard/)
+-   [Easy](Easy/)
+-   [Medium](Medium/)
+-   [Hard](Hard/)
 
 ## Directory Structure
 
@@ -104,7 +104,7 @@ class Solution {
 }
 ```
 
-If you want to add a new approach and want to explain your approach you can add your solution by following this directory structure: ([see example](https://github.com/godkingjay/LeetCode/blob/master/Hard/72.%20Edit%20Distance/Levenshtein/README.md))
+If you want to add a new approach and want to explain your approach you can add your solution by following this directory structure: ([see example](Hard/72.%20Edit%20Distance/))
 
 ```
 LeetCode/
