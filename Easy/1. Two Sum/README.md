@@ -6,38 +6,34 @@ You may assume that each input would have **exactly one solution**, and you may 
 
 You can return the answer in any order.
 
----
+***
 
 ### **Example 1**
-
 **Input:** `nums = [2,7,11,15]`, `target = 9` <br/>
 **Output:** `[0,1]` <br/>
 **Explanation:** Because `nums[0] + nums[1] == 9`, we `return [0, 1]`.
 
----
+***
 
 ### **Example 2**
-
 **Input:** `nums = [3,2,4]`, `target = 6` <br/>
 **Output:** `[1,2]`
 
----
+***
 
 ### **Example 3**
-
 **Input:** `nums = [3,3]`, `target = 6` <br/>
 **Output:** `[0,1]`
 
----
+***
 
 ### **Constraint**
+- `2 <= nums.length <= 10^4`
+- `-10^9 <= nums[i] <= 10^9`
+- `-10^9 <= target <= 10^9`
+- **Only one valid answer exists.**
 
--   `2 <= nums.length <= 10^4`
--   `-10^9 <= nums[i] <= 10^9`
--   `-10^9 <= target <= 10^9`
--   **Only one valid answer exists.**
-
----
+***
 
 ## SOLUTIONS
 
@@ -49,8 +45,7 @@ We create a for loop to iterate through each element of the array. Each element 
 
 An operation is perforned `target - element` that is stored to variable `pair`, which represents the number needed to be added to the `current element` to get the `target`. The HashMap is checked if it already contains the number `pair`. If it is, then return the `index of the current element` and the `index of pair`.
 
--   **JAVA**
-
+- **JAVA**
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -65,11 +60,9 @@ class Solution {
     }
 }
 ```
-
 <br/>
 
--   **C**++
-
+- **C**++
 ```cpp
 class Solution {
 public:
@@ -86,14 +79,12 @@ public:
 ```
 
 ### **Complexity**
-
--   **Time:** `O(n)`
--   **Space:** `O(n)`
+- **Time:** `O(n)`
+- **Space:** `O(n)`
 
 <br/>
 
--   **Ruby**
-
+- **Ruby**
 ```rb
 def two_sum(nums, target)
     hash = {}
@@ -107,8 +98,7 @@ end
 
 <br/>
 
--   **Python**
-
+- **Python**
 ```py
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -123,8 +113,7 @@ class Solution:
 
 <br/>
 
--   **PHP**
-
+- **PHP**
 ```php
 class Solution {
 
@@ -150,26 +139,30 @@ class Solution {
 
 <br/>
 
--   **JavaScript**
-
+- **JavaScript**
 ```js
-const twoSum = function (nums, target) {
+const twoSum = function (nums, target)
+{
     //search of all Array
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
+    for (let i = 0; i < nums.length; i++)
+    {
+        for (let j = i + 1; j < nums.length; j++)
+        {
             // if (nums[j] === target - nums[i])
-            if (nums[i] + nums[j] === target) {
+            if(nums[i] + nums[j] === target)
+            {
                 return [i, j];
             }
         }
     }
-};
+    };
+
+
 ```
 
 <br/>
 
--   **C#**
-
+- **C#**
 ```cs
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
