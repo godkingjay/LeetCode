@@ -8,14 +8,6 @@
 # s = if man was meant to stay on the ground god would have given us roots
 # After removing spaces, the string is 54 characters long. sqrt(54) is between 7 and 8, so it is written in the form of a grid with 7 rows and 8 columns.
 
-# ifmanwas
-# meanttos
-# tayonthe
-# groundgo
-# dwouldha
-# vegivenu
-# sroots
-
 # Ensure that rows×columns≥L
 # If multiple grids satisfy the above conditions, choose the one with the minimum area, i.e. rows×columns.
 
@@ -26,29 +18,18 @@
 
 
 
-# Sample Input:
-# haveaniceday
+Input
+["Encrypter", "encrypt", "decrypt"]
+[[['a', 'b', 'c', 'd'], ["ei", "zf", "ei", "am"], ["abcd", "acbd", "adbc", "badc", "dacb", "cadb", "cbda", "abad"]], ["abcd"], ["eizfeiam"]]
+Output
+[null, "eizfeiam", 2]
 
-# Sample Output:
-# hae and via ecy
-
-# Explanation:
-# L=12,  sqrt(12) is between 3 and 4.
-# Rewritten with 3 rows and 4 columns:
-# have
-# anic
-# eday
-
-# Sample Input: 2
-# feedthedog
-
-# Sample Output: 2
-# fto ehg ee dd
-
-# Explanation:
-# L=10, sqrt(10) is between 3 and 4.
-# Rewritten with 3 rows and 4 columns:
-# feed
-# thed
-# og
+Explanation
+Encrypter encrypter = new Encrypter([['a', 'b', 'c', 'd'], ["ei", "zf", "ei", "am"], ["abcd", "acbd", "adbc", "badc", "dacb", "cadb", "cbda", "abad"]);
+encrypter.encrypt("abcd"); // return "eizfeiam". 
+                           // 'a' maps to "ei", 'b' maps to "zf", 'c' maps to "ei", and 'd' maps to "am".
+encrypter.decrypt("eizfeiam"); // return 2. 
+                              // "ei" can map to 'a' or 'c', "zf" maps to 'b', and "am" maps to 'd'. 
+                              // Thus, the possible strings after decryption are "abad", "cbad", "abcd", and "cbcd". 
+                              // 2 of those strings, "abad" and "abcd", appear in dictionary, so the answer is 2.
 
