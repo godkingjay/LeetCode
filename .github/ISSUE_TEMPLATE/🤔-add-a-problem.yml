@@ -4,6 +4,7 @@ title: "[PROBLEM] 0. Problem Title "
 labels: hacktoberfest, problem
 assignees: ''
 
+body:
 - type: input
   id: problem-number
   attributes:
