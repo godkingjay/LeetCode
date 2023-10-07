@@ -1,0 +1,32 @@
+name: "\U0001F914 Add a Problem"
+about: Add a LeetCode problem.
+title: "[PROBLEM] 0. Problem Title "
+labels: hacktoberfest, problem
+assignees: ''
+
+- type: input
+  id: problem-number
+  attributes:
+    label: Problem Number
+    description: "The problem number."
+    placeholder: 1
+  validations:
+    required: true
+
+- type: input
+  id: problem-title
+  attributes:
+    label: Problem Title
+    description: "The title of the problem"
+    placeholder: "VS Code"
+  validations:
+    required: true
+
+- type: textarea
+  id: problem-description
+  attributes:
+    label: Problem Description
+    description: "The description of the problem."
+    placeholder: "You are..."
+  validations:
+    required: true
