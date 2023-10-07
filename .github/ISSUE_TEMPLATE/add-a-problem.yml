@@ -3,24 +3,6 @@ description: "Add a LeetCode problem."
 title: "[PROBLEM] 0. Problem Title"
 labels: ["hacktoberfest", "problem"]
 body:
-  - type: input
-    id: problem-number
-    attributes:
-      label: Problem Number
-      description: "The number of the problem."
-      placeholder: "1"
-    validations:
-      required: true
-      
-  - type: input
-    id: problem-title
-    attributes:
-      label: Problem Title
-      description: "The title of the problem."
-      placeholder: "Two Sum"
-    validations:
-      required: true
-      
   - type: dropdown
     id: problem-difficulty
     attributes:
