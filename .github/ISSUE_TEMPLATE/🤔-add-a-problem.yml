@@ -9,7 +9,7 @@ body:
   attributes:
     label: Problem Number
     description: "The problem number."
-    placeholder: 1
+    placeholder: "1"
   validations:
     required: true
 
