@@ -18,7 +18,7 @@ body:
   attributes:
     label: Problem Title
     description: "The title of the problem"
-    placeholder: "VS Code"
+    placeholder: "Two Sum"
   validations:
     required: true
 
