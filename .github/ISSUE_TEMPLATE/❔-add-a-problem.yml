@@ -1,8 +1,7 @@
-name: "\U0001F914 Add a Problem"
+name: "❔ Add a Problem"
 title: "[PROBLEM] 0. Problem Title "
-description: Add a LeetCode problem.
-labels: hacktoberfest, problem
-
+description: "Add a LeetCode problem."
+labels: ["hacktoberfest", "problem"]
 body:
 - type: input
   id: problem-number
@@ -27,6 +26,6 @@ body:
   attributes:
     label: Problem Description
     description: "The description of the problem."
-    placeholder: "You are..."
+    placeholder: "You are given..."
   validations:
     required: true
