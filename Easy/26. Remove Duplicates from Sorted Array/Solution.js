@@ -1,3 +1,4 @@
+// Solution # 1
 const removeDuplicates = function (nums) {
     let uniqueCount = 1; // Initialize the count of unique elements.
 
@@ -11,3 +12,9 @@ const removeDuplicates = function (nums) {
 
     return uniqueCount;
 };
+
+// Solution # 2
+const removeDuplicates = function (nums) {
+    return [...new Set(nums)];
+    // A Set is a built-in JavaScript data structure that only stores unique values, so any duplicates in the nums array are automatically removed when creating the Set.
+}
