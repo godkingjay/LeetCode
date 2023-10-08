@@ -9,6 +9,7 @@ class Solution {
 
     for (int i = 0; i < arr.length - 2; i++)
     {
+
       int left = i + 1;
       int right = arr.length - 1;
 
@@ -24,8 +25,11 @@ class Solution {
           left++;
         else
           right--;
-      }
+      
+        }
     }
+
     return new ArrayList<>(result);
+    
     }
 }
