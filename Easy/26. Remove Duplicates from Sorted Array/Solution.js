@@ -15,6 +15,7 @@ const removeDuplicates = function (nums) {
 
 // Solution # 2
 const removeDuplicates = function (nums) {
-    return [...new Set(nums)];
+    let k = [...new Set(nums)];
+    return k.length;
     // A Set is a built-in JavaScript data structure that only stores unique values, so any duplicates in the nums array are automatically removed when creating the Set.
 }
