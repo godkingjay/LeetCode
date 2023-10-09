@@ -9,9 +9,9 @@ body:
       label: Difficulty
       description: "The difficulty of the problem."
       options:
-        - "![EASY](https://img.shields.io/badge/-EASY-40c040?style=for-the-badge&logo=LeetCode&logoColor=white)"
-        - "![MEDIUM](https://img.shields.io/badge/-MEDIUM-ffa116?style=for-the-badge&logo=LeetCode&logoColor=white)"
-        - "![Hard](https://img.shields.io/badge/-Hard-FF4040?style=for-the-badge&logo=LeetCode&logoColor=black)"
+        - Easy
+        - Medium
+        - Hard
     validations:
       required: true
       
