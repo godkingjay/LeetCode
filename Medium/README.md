@@ -1,4 +1,4 @@
-# Problems ![MEDIUM](https://img.shields.io/badge/-MEDIUM-ffa116?style=for-the-badge&logo=LeetCode&logoColor=black)
+# Problems ![MEDIUM](https://img.shields.io/badge/-MEDIUM-ffa116?style=for-the-badge&logo=LeetCode&logoColor=white)
 
 | **No.**  | **Problem**                                                                                                             |
 | :------: | :---------------------------------------------------------------------------------------------------------------------- |
