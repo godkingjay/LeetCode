@@ -14,8 +14,13 @@ const removeDuplicates = function (nums) {
 };
 
 // Solution # 2
-const removeDuplicates = function (nums) {
-    let k = [...new Set(nums)];
-    return k.length;
-    // A Set is a built-in JavaScript data structure that only stores unique values, so any duplicates in the nums array are automatically removed when creating the Set.
+function removeDuplicates(nums) {
+    // Use filter to create a new array with unique elements
+    const uniqueArray = nums.filter((value, index) => nums.indexOf(value) === index);
+
+    // Copy the unique elements back to the original array
+    for (let i = 0; i < uniqueArray.length; i++) {
+        nums[i] = uniqueArray[i];
+    }
+    return uniqueArray.length;
 }
