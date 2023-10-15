@@ -23,6 +23,6 @@ We also keep track of the '3' candidate as 'third'. If we encounter a number sma
 If the current number is greater than the top of the stack, it becomes a potential '3' candidate, and we update 'third'.
 Finally, we push the current number onto the stack for potential future '2' candidates.
 
-# Complexity
+### Complexity
 - Time complexity: O(n), where n is the length of the 'nums' list.
 - Space complexity: O(n), as the stack can potentially hold all elements of the 'nums' list.
