@@ -8,7 +8,8 @@ class Solution {
     }
 
 
-    // the sub-problem: to match[i, m
+    // the sub-problem: to match[i, m]
+    
 
 
     private boolean dfs(String s, String p, int i, int j, int m, int n, Boolean[][] M) {
@@ -27,6 +28,7 @@ class Solution {
     private boolean match(char c1, char c2) {
         if (c2 == '.') return true;
         return c1 == c2;
+        
     }
-    
+
 }
