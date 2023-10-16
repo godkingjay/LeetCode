@@ -1,27 +1,42 @@
 import java.util.ArrayList;
 public class Solution{
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        ArrayList<Integer> list = new ArrayList<>(); //ArrayList Initialization
-        
-        //Add Elements from `nums1` to `list`
-        for(int i:nums1){
-            list.add(i); 
+        int a = nums1.length;
+        int b = nums2.length;
+
+        // Calculate the total length of the merged array
+        int c = a + b;
+
+        // Create a new integer array to hold the merged elements
+        int[] arr = new int[c];
+
+        // Copy elements from nums1 into arr
+        for (int i = 0; i < a; i++) {
+            arr[i] = nums1[i];
         }
-        //Add Elements from `nums2` to `list`
-        for(int j:nums2){
-            list.add(j);
+
+        // Copy elements from nums2 into arr, starting from position a
+        for (int i = 0; i < b; i++) {
+            arr[a + i] = nums2[i];
         }
 
-        double sum=0; //Initialize a Sum Variable
+        // Sort the merged array in ascending order
+        Arrays.sort(arr);
 
-        for(int i=0;i<list.size();i++){
-            sum += list.get(i); //Calculate the Sum of Elements
+        // Check if the length of the merged array is even or odd
+        if (c % 2 == 0) {
+            // Calculate the indices of the two middle elements
+            int mid1 = (c - 1) / 2;
+            int mid2 = mid1 + 1;
+
+            // Calculate the median as the average of the two middle elements
+            return (double) (arr[mid1] + arr[mid2]) / 2;
+        } else {
+            // Calculate the index of the middle element
+            int mid = (c - 1) / 2;
+
+            // Return the middle element as the median
+            return arr[mid];
         }
-        
-        double res = sum/list.size(); //Calculate the Average (Mean)
-
-        return res; //Return the Median Value
-
-
     }
 }
