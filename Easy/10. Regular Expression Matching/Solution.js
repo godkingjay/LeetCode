@@ -25,6 +25,6 @@ var isMatch = function(s, p) {
     return dp[m][n];
 }
 
-s = "aa";
-p = "a*"
-console.log(isMatch(s, p))
+let s = "aa";
+let p = "a*";
+console.log(isMatch(s, p));
