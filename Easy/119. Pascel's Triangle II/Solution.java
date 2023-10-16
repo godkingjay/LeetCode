@@ -27,6 +27,7 @@ class Solution {
         Solution obb = new Solution();
         List<Integer> li = obb.getRow(N);
 
-        System.out.println(li);
+        output.write(li+"\n");
+        output.flush();
     }
 }
