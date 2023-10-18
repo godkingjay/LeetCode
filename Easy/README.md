@@ -46,3 +46,4 @@
 | **2373** | [Largest Local Values in a Matrix](2373.%20Largest%20Local%20Values%20in%20a%20Matrix/)                                         |
 | **2423** | [Remove Letter To Equalize Frequency](2423.%20Remove%20Letter%20To%20Equalize%20Frequency/)                                     |
 | **2591** | [Distribute Money to Maximum Children](2591.%20Distribute%20Money%20to%20Maximum%20Children/)                                   |
+| **242** | [Valid Anagram](242.%20Valid%20Anagram/)                                   |
