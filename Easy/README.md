@@ -11,6 +11,7 @@
 | **101**  | [Symmetric Tree](101.%20Symmetric%20Tree/)                                                                                      |
 | **104**  | [Maximum Depth of Binary Tree](104.%20Maximum%20Depth%20of%20Binary%20Tree/)                                                    |
 | **108**  | [Convert Sorted Array to Binary Search Tree](108.%20Convert%20Sorted%20Array%20to%20Binary%20Search%20Tree/)                    |
+| **121**  | [Best Time to Buy and Sell Stock](121.%20Best%20Time%20to%20buy%20and%20sell%20stock)                                           |
 | **141**  | [Linked List Cycle](141.%20Linked%20List%20Cycle/)                                                                              |
 | **141**  | [Linked List Cycle](141.Linked%20List%20Cycle/)                                                                                 |
 | **144**  | [Binary Tree Preorder Traversal](144.%20Binary%20Tree%20Preorder%20Traversal/)                                                  |
@@ -46,4 +47,4 @@
 | **2373** | [Largest Local Values in a Matrix](2373.%20Largest%20Local%20Values%20in%20a%20Matrix/)                                         |
 | **2423** | [Remove Letter To Equalize Frequency](2423.%20Remove%20Letter%20To%20Equalize%20Frequency/)                                     |
 | **2591** | [Distribute Money to Maximum Children](2591.%20Distribute%20Money%20to%20Maximum%20Children/)                                   |
-| **242** | [Valid Anagram](242.%20Valid%20Anagram/)                                   |
+| **242**  | [Valid Anagram](242.%20Valid%20Anagram/)                                                                                        |
