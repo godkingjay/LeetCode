@@ -25,6 +25,7 @@
 | **560**  | [Subarray Sum Equals K](560.%20Subarray%20Sum%20Equals%20K/)                                                            |
 | **725**  | [Split List in Parts](725.%20Split%20List%20in%20Parts/)                                                                |
 | **814**  | [Binary Tree Pruning](814.%20Binary%20Tree%20Pruning/)                                                                  |
+| **853**  | [Car Fleet](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)                                                                  |
 | **967**  | [Numbers With Same Consecutive Differences](967.%20Numbers%20With%20Same%20Consecutive%20Differences/)                  |
 | **974**  | [Subarray Sums Divisible by K](974.%20Subarray%20Sums%20Divisible%20by%20K/)                                            |
 | **1048** | [Longest String Chain](1048.%20Longest%20String%20Chain/)                                                               |
