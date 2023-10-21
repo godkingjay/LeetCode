@@ -3,7 +3,6 @@
 | **No.**  | **Problem**                                                                                                                     |
 | :------: | :------------------------------------------------------------------------------------------------------------------------------ |
 |  **1**   | [Two Sum](1.%20Two%20Sum/)                                                                                                      |
-|  **2**   | [Backspace String Compare](2.%20Backspace%20String%20Compare/)                                                                                                      |
 |  **9**   | [Palindrome Number](9.%20Palindrome%20Number/)                                                                                  |
 |  **20**  | [Valid Parentheses](20.%20Valid%20Parentheses/)                                                                                 |
 |  **26**  | [Remove Duplicates from Sorted Array](26.%20Remove%20Duplicates%20from%20Sorted%20Array/)                                       |
@@ -31,6 +30,7 @@
 | **637**  | [Average of Levels in Binary Tree](637.%20Average%20of%20Levels%20in%20Binary%20Tree/)                                          |
 | **653**  | [Two Sum IV - Input is a BST](653.%20Two%20Sum%20IV%20-%20Input%20is%20a%20BST/)                                                |
 | **700**  | [Search in a Binary Search Tree](700.%20Search%20in%20a%20Binary%20Search%20Tree/)                                              |
+| **844**  | [Backspace String Compare](844.%20Backspace%20String%20Compare/)                                                                |
 | **896**  | [Monotonic Array](896.%20Monotonic%20Array/)                                                                                    |
 | **905**  | [Sort Array by Parity](905.%20Sort%20Array%20by%20Parity/)                                                                      |
 | **1337** | [K Weakest Rows in a Matrix](1337.%20K%20Weakest%20Rows%20in%20a%20Matrix/)                                                     |
