@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backspace String Compare</title>
+  </head>
+  <body>
+    <button onclick="showCustomDialog()">Compare Strings</button>
+
+    <div id="custom-dialog" style="display: none">
+      <p id="result-text">Result will be displayed here</p>
+    </div>
+
+    <script>
+      function showCustomDialog() {
+        const customDialog = document.getElementById("custom-dialog");
+        const resultText = document.getElementById("result-text");
+
+        const s = prompt("Enter the first string:");
+        const t = prompt("Enter the second string:");
+        const result = backspaceCompare(s, t);
+
+        customDialog.style.display = "block";
+
+        if (result) {
+          resultText.innerHTML = `Are the first input "${s}" and the second input "${t}" equal after considering backspaces?<br><span style="color: green;">True</span>`;
+        } else {
+          resultText.innerHTML = `Are the first input "${s}" and the second input "${t}" equal after considering backspaces?<br><span style="color: red;">False</span>`;
+        }
+      }
+    </script>
+    <script src="./logic.js"></script>
+  </body>
+</html>

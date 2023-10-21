@@ -3,6 +3,7 @@
 | **No.**  | **Problem**                                                                                                                     |
 | :------: | :------------------------------------------------------------------------------------------------------------------------------ |
 |  **1**   | [Two Sum](1.%20Two%20Sum/)                                                                                                      |
+|  **2**   | [Backspace String Compare](2.%20Backspace%20String%20Compare/)                                                                                                      |
 |  **9**   | [Palindrome Number](9.%20Palindrome%20Number/)                                                                                  |
 |  **20**  | [Valid Parentheses](20.%20Valid%20Parentheses/)                                                                                 |
 |  **26**  | [Remove Duplicates from Sorted Array](26.%20Remove%20Duplicates%20from%20Sorted%20Array/)                                       |
