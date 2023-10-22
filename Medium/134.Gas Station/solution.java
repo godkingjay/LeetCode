@@ -15,4 +15,4 @@ class Solution {
         }
         return (total_surplus < 0) ? -1 : start;
     }
-
+}
