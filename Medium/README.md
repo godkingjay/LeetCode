@@ -1,4 +1,4 @@
-# Problems ![MEDIUM](https://img.shields.io/badge/-MEDIUM-ffa116?style=for-the-badge&logo=LeetCode&logoColor=black)
+# Problems ![MEDIUM](https://img.shields.io/badge/-MEDIUM-ffa116?style=for-the-badge&logo=LeetCode&logoColor=white)
 
 | **No.**  | **Problem**                                                                                                             |
 | :------: | :---------------------------------------------------------------------------------------------------------------------- |
@@ -16,6 +16,7 @@
 |  **63**  | [Unique Paths II](63.%20Unique%20Paths%20II/)                                                                           |
 |  **98**  | [Valid BST](98.Valid%20BST/)                                                                                            |
 | **142**  | [LinkedList Cycle II](142.%20LinkedList%20Cycle%20II/)                                                                  |
+| **146**  | [LRU Cache](146.%20LRU%20Cache/)                                                                  |
 | **153**  | [Find Minimum in Rotated Sorted Array](153.%20Find%20Minimum%20in%20Rotated%20Sorted%20Array/)                          |
 | **179**  | [Largest Number](179.%20Largest%20Number/)                                                                              |
 | **200**  | [Number of Islands](200.%20Number%20of%20Islands/)                                                                      |
@@ -25,6 +26,7 @@
 | **560**  | [Subarray Sum Equals K](560.%20Subarray%20Sum%20Equals%20K/)                                                            |
 | **725**  | [Split List in Parts](725.%20Split%20List%20in%20Parts/)                                                                |
 | **814**  | [Binary Tree Pruning](814.%20Binary%20Tree%20Pruning/)                                                                  |
+| **853**  | [Car Fleet](853.%20Car%20Fleet)                                                                  |
 | **967**  | [Numbers With Same Consecutive Differences](967.%20Numbers%20With%20Same%20Consecutive%20Differences/)                  |
 | **974**  | [Subarray Sums Divisible by K](974.%20Subarray%20Sums%20Divisible%20by%20K/)                                            |
 | **1048** | [Longest String Chain](1048.%20Longest%20String%20Chain/)                                                               |
