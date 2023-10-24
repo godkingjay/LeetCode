@@ -1,9 +1,4 @@
-import java.util.*;
 
-public class sol {
-    public static void main(String[] args) {
-        // enter your sol here
-    }
 class Solution {
     public int maximumScore(int[] nums, int k) {
         int [] nsr = findNSR(nums);
@@ -20,7 +15,7 @@ class Solution {
         return score;
     }
 
-//find next smaller element on right 
+    //find next smaller element on right 
     public int[] findNSR(int [] arr){
         int [] nsr = new int[arr.length];
         Stack<Integer> s = new Stack<>();
@@ -37,10 +32,9 @@ class Solution {
             s.push(i);
         }
         return nsr;
-
     }
-        //find next smaller element on left 
-
+    
+    //find next smaller element on left 
     public int[] findNSL(int [] arr){
         int [] nsl = new int[arr.length];
         Stack<Integer> s = new Stack<>();
@@ -57,8 +51,5 @@ class Solution {
             s.push(i);
         }
         return nsl;
-
     }
-}
-
 }
