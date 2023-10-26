@@ -1,3 +1,7 @@
+/*
+ This is a classic backtracking problem except that we need to check for duplicates.
+ This is solved using two ideas: Hashset and boolean array visited.
+ */
 class Solution {
     List<List<Integer>> res;
     Set<List<Integer>> set = new HashSet();
