@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -40,12 +36,3 @@ public:
         return s.substr(st, max_len);
     }
 };
-
-int main() {
-    Solution sol;
-    string input;
-    cout << "Enter a string: ";
-    cin >> input;
-    cout << "Longest Palindromic Substring: " << sol.longestPalindrome(input) << endl;
-    return 0;
-}
