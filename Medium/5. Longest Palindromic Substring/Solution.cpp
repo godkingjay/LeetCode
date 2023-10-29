@@ -1,35 +1,47 @@
-#include <string>
-
-class Solution {
+class Solution
+{
 public:
-    std::string longestPalindrome(std::string s) {
-        std::string res = "";
-        int reslen = 0;
+    std::string longestPalindrome(std::string s)
+    {
+        if (s.length() <= 1)
+        {
+            return s;
+        }
 
-        for (int i = 0; i < s.length(); i++) {
-            // odd length
-            int left = i, right = i;
-            while (left >= 0 && right < s.length() && s[left] == s[right]) {
-                if (right - left + 1 > reslen) {
-                    res = s.substr(left, right - left + 1);
-                    reslen = right - left + 1;
-                }
-                left -= 1;
-                right += 1;
-            }
+        int max_len = 1;
+        std::string max_str = s.substr(0, 1);
 
-            // even length;
-            left = i;
-            right = i + 1;
-            while (left >= 0 && right < s.length() && s[left] == s[right]) {
-                if (right - left + 1 > reslen) {
-                    res = s.substr(left, right - left + 1);
-                    reslen = right - left + 1;
+        for (int i = 0; i < s.length(); ++i)
+        {
+            for (int j = i + max_len; j <= s.length(); ++j)
+            {
+                if (j - i > max_len && isPalindrome(s.substr(i, j - i)))
+                {
+                    max_len = j - i;
+                    max_str = s.substr(i, j - i);
                 }
-                left -= 1;
-                right += 1;
             }
         }
-        return res;
+
+        return max_str;
+    }
+
+private:
+    bool isPalindrome(const std::string &str)
+    {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right)
+        {
+            if (str[left] != str[right])
+            {
+                return false;
+            }
+            ++left;
+            --right;
+        }
+
+        return true;
     }
 };
