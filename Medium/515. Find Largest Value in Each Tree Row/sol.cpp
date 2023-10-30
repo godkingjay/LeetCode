@@ -1,52 +1,35 @@
-#include <iostream>
-#include <bits/stdc++.h>
-using namespace std;
-
-struct TreeNode
-{
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-};
-
 class Solution
 {
 public:
-vector<int> largestValues(TreeNode *root)
-{
-    if (!root)
-        return {};
-
-    std::vector<int> result;
-    std::queue<TreeNode *> queue;
-    queue.push(root);
-
-    while (!queue.empty())
+    vector<int> largestValues(TreeNode *root)
     {
-        int curr_level_size = queue.size();
-        int max_val = INT_MIN;
+        if (!root)
+            return {};
 
-        for (int i = 0; i < curr_level_size; ++i)
+        std::vector<int> result;
+        std::queue<TreeNode *> queue;
+        queue.push(root);
+
+        while (!queue.empty())
         {
-            TreeNode *node = queue.front();
-            queue.pop();
-            max_val = std::max(max_val, node->val);
+            int curr_level_size = queue.size();
+            int max_val = INT_MIN;
 
-            if (node->left)
-                queue.push(node->left);
-            if (node->right)
-                queue.push(node->right);
+            for (int i = 0; i < curr_level_size; ++i)
+            {
+                TreeNode *node = queue.front();
+                queue.pop();
+                max_val = std::max(max_val, node->val);
+
+                if (node->left)
+                    queue.push(node->left);
+                if (node->right)
+                    queue.push(node->right);
+            }
+
+            result.push_back(max_val);
         }
 
-        result.push_back(max_val);
+        return result;
     }
-
-    return result;
-}
 };
-int main()
-{
-    //run the function 
-    return 0;
-}
