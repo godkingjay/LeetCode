@@ -3,6 +3,7 @@
 | **No.**  | **Problem**                                                                                                             |
 | :------: | :---------------------------------------------------------------------------------------------------------------------- |
 |  **2**   | [Add Two Numbers](2.%20Add%20Two%20Numbers/)                                                                            |
+|  **6**   | [Zigzag Conversion](6.%20Zigzag%20Conversion/)                                                                            |
 |  **7**   | [Reverse Integer](7.%20Reverse%20Integer/)                                                                              |
 |  **8**   | [String to Integer (atoi)](<8.%20String%20to%20Integer%20(atoi)/>)                                                      |
 |  **11**  | [Container With Most Water](11.%20Container%20With%20Most%20Water/)                                                     |
