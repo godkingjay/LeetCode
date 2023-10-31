@@ -1,7 +1,9 @@
 name: "❔ Add a Problem"
 description: "Add a LeetCode problem."
 title: "[PROBLEM] 0. Problem Title"
-labels: ["hacktoberfest", "problem"]
+labels:
+  # - "hacktoberfest"
+  - "problem"
 body:
   - type: dropdown
     id: problem-difficulty
