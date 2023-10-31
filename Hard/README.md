@@ -6,6 +6,7 @@
 |  **41**  | [First Missing Positive](41.%20First%20Missing%20Positive/)                                                                                           |
 |  **68**  | [Test Justification](68.%20Test%20Justification/)                                                                                                     |
 |  **72**  | [Edit Distance](72.%20Edit%20Distance/)                                                                                                               |
+|  **115** | [Distinct Subsequences](115.%20Distinct%20Subsequences/)                                                                                               |
 | **135**  | [Candy](135.%20Candy/)                                                                                                                                |
 | **239**  | [Sliding Window Max](239.%20Sliding%20Window%20Max/)                                                                                                  |
 | **332**  | [Reconstruct Itinerary](332.%20Reconstruct%20Itinerary/)                                                                                              |
