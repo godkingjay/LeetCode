@@ -122,6 +122,8 @@ LeetCode/
 
 ## Contributing
 
+<img src="https://repobeats.axiom.co/api/embed/0d89629d7f50c4de69d4522e25cf2b6d83045152.svg" alt="Repobeats analytics image" width="100%" />
+
 Contributions are welcome! If you'd like to add your own solutions or improve existing ones, please follow these guidelines:
 
 1. Fork the repository.
